@@ -1,13 +1,27 @@
-package com.graduation.appletree.onlinejudge;
+package com.graduation.appletree.onlinejudge.activity;
 
-import android.support.v7.app.AppCompatActivity;
-import android.os.Bundle;
+import android.content.Context;
 
-public class MainActivity extends AppCompatActivity {
+import com.graduation.appletree.onlinejudge.eventbus.EventCenter;
+
+public class MainActivity extends BaseFragmentActivity {
+    @Override
+    protected int getContentViewLayoutID() {
+        return 0;
+    }
 
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+    protected void initViewAndEvent() {
+
+    }
+
+    @Override
+    protected void onEventComing(EventCenter eventCenter) {
+
+    }
+
+    @Override
+    protected Context getContext() {
+        return null;
     }
 }
