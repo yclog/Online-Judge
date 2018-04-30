@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <color name="colorPrimary">#3F51B5</color>
-    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorPrimaryDark">#323232</color>
     <color name="backgroundWhite">#f9f9f9</color>
 
     <color name="topestLightDark">#323232</color>
     <color name="titlebarDark">#222222</color>
-    <color name="titlebarTextLight">#d2d2d2</color>
+    <color name="titlebarTextLight">#d7d7d7</color>
     <color name="titlebarTextGrey">#9d9d9d</color>
     <color name="titlebarSelectedTextGrey">#ffffff</color>
 
@@ -21,7 +21,8 @@
     <color name="error">#d9534f</color>
     <color name="acceptRate">#5bc0de</color>
 
-    <color name="textDarkLight">#999999</color>
+    <color name="textDarkLight">#d7d7d7</color>
+    <color name="textWhtie">#f9f9f9</color>
     <color name="textDarkPrimary">#333333</color>
     <color name="textBoldDarkPrimary">#555555</color>
 
