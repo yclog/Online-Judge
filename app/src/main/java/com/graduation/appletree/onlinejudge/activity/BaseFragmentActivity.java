@@ -17,7 +17,8 @@ import de.greenrobot.event.Subscribe;
 import de.greenrobot.event.ThreadMode;
 
 /**
- * Created by wangchengyuan on 2018/3/21.
+ * Created by luke on 2018/3/21.
+ * Description: build a super base fragmentActivity class
  */
 
 public abstract class BaseFragmentActivity extends FragmentActivity{
@@ -26,7 +27,7 @@ public abstract class BaseFragmentActivity extends FragmentActivity{
         super.onCreate(savedInstanceState);
         // Check NetWork Status
         checkNetworkStatus();
-        // setConnentView
+        // setContentView
         setContentViewLayoutId();
         // Init Listener and Event
         initViewAndEvent();

@@ -1,8 +1,8 @@
 package com.graduation.appletree.onlinejudge.eventbus;
 
 /**
- * Created by wangchengyuan on 2018/3/21.
- * Desription:EventBus消息总线管道
+ * Created by luke on 2018/3/21.
+ * Description: EventBus消息总线管道
  */
 
 public interface EventCode {

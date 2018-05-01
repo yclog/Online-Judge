@@ -11,7 +11,7 @@ import com.graduation.appletree.onlinejudge.activity.BaseAppManager;
 import com.graduation.appletree.onlinejudge.application.crash.CustomCrashHandler;
 
 /**
- * Created by wangchengyuan on 2018/3/21.
+ * Created by luke on 2018/3/21.
  */
 
 public class DemoApplication extends BaseApplication implements Application.ActivityLifecycleCallbacks{

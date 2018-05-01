@@ -14,8 +14,8 @@ import rx.android.schedulers.AndroidSchedulers;
 import rx.schedulers.Schedulers;
 
 /**
- * Created by wangchengyuan on 2018/3/21.
- * Network Utls
+ * Created by luke on 2018/3/21.
+ * Network Utils
  * RxJava + Retrofit
  */
 

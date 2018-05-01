@@ -3,7 +3,7 @@ package com.graduation.appletree.onlinejudge.application;
 import android.app.Application;
 
 /**
- * Created by wangchengyuan on 2018/3/22.
+ * Created by luke on 2018/3/22.
  */
 
 public class BaseApplication extends Application{

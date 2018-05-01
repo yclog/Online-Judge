@@ -28,6 +28,7 @@ dependencies {
 
     // Gson 2.8.2
     implementation 'com.google.code.gson:gson:2.8.2'
+    // Retrofit2:Convert-gson
     implementation 'com.squareup.retrofit2:converter-gson:2.0.0-beta4'
     // Retrofit2:Adapter-rxjava
     implementation 'com.squareup.retrofit2:adapter-rxjava:2.0.0-beta4'
