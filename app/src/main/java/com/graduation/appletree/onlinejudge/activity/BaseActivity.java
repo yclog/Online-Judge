@@ -21,7 +21,7 @@ import de.greenrobot.event.ThreadMode;
  * Description: build a super base fragmentActivity class
  */
 
-public abstract class BaseFragmentActivity extends FragmentActivity{
+public abstract class BaseActivity extends FragmentActivity{
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -95,27 +95,27 @@ public abstract class BaseFragmentActivity extends FragmentActivity{
         if (getContentViewLayoutID() != 0){
             setContentView(getContentViewLayoutID());
         } else {
-            throw new IllegalArgumentException("Please mkae sure your LayoutId is valid");
+            throw new IllegalArgumentException("Please make sure your LayoutId is valid");
         }
     }
 
     // Jump to Another Class without params
     protected void readyGo(Class<?> targetClass){
-        Intent intent = new Intent(this,targetClass);
+        Intent intent = new Intent(this, targetClass);
         startActivity(intent);
     }
 
     // Jump to Another Class with params
     protected void readyGo(Class<?> targetClass,Bundle bundle){
-        Intent intent = new Intent(this,targetClass);
+        Intent intent = new Intent(this, targetClass);
         intent.putExtras(bundle);
         startActivity(intent);
     }
 
     // Jump to Another Class with requestCode
     protected void readyGoForResult(Class<?> targetClass,int requestCode){
-        Intent intent = new Intent(this,targetClass);
-        startActivityForResult(intent,requestCode);
+        Intent intent = new Intent(this, targetClass);
+        startActivityForResult(intent, requestCode);
     }
 
 
