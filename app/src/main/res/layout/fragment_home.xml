@@ -1,11 +1,37 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout
-    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
-    android:layout_height="match_parent">
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backgroundWhite"
+    android:orientation="vertical">
 
-    <TextView
-        android:text="home"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
+    <android.support.v7.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:elevation="4dp"
+        android:background="@color/titlebarDark">
 
-</android.support.constraint.ConstraintLayout>
+        <TextView
+            android:text="Home"
+            android:textColor="@color/titlebarTextLight"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </android.support.v7.widget.Toolbar>
+
+    <!--首页推送滚动-->
+    <android.support.v4.view.ViewPager
+        android:id="@+id/ad_viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="140dp">
+    </android.support.v4.view.ViewPager>
+
+    <!--首页Category-->
+    <include layout="@layout/fragment_home_category"></include>
+
+    <!--首页Rank-->
+    <include layout="@layout/fragment_home_rank"></include>
+
+    <!--首页展示Excellent solution-->
+    <include layout="@layout/fragment_home_solution"></include>
+</LinearLayout>

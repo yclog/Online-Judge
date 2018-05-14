@@ -43,4 +43,5 @@ dependencies {
     annotationProcessor 'com.jakewharton:butterknife-compiler:8.8.1'
     // EventBus 3.0.0-beta1
     implementation 'de.greenrobot:eventbus:3.0.0-beta1'
+    implementation 'com.android.support:recyclerview-v7:26.1.0'
 }
