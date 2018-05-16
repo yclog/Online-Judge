@@ -7,7 +7,7 @@ public class PersonalFragment extends BaseFragment{
 
     @Override
     protected int getContentViewLayoutID() {
-        return R.layout.fragment_personal;
+        return R.layout.fragment_profile;
     }
 
     @Override

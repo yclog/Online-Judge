@@ -21,6 +21,10 @@
     <color name="error">#d9534f</color>
     <color name="acceptRate">#5bc0de</color>
 
+    <color name="home_rank_no.1">#dfb740</color>
+    <color name="home_rank_no.2">#ededed</color>
+    <color name="home_rank_no.3">#ecb185</color>
+
     <color name="textDarkLight">#d7d7d7</color>
     <color name="textWhtie">#f9f9f9</color>
     <color name="textDarkPrimary">#333333</color>
@@ -71,7 +75,8 @@
     <color name="profileStar">#fbbc05</color>
     <color name="profilePoints">#ffdf00</color>
     <color name="profileProgress">#8365cd</color>
-    <color name="profileSubmissions">#1da8c4</color>
+    <color name="profileAcceptRate">#1da8c4</color>
+    <color name="profileSubmissions">#28a09b</color>
     <color name="profileMyList">#d05461</color>
     <color name="profileNotes">#fea650</color>
     <color name="pointMarket">#fea116</color>

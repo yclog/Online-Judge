@@ -12,12 +12,12 @@
             android:layout_width="36dp"
             android:layout_height="36dp"
             app:civ_border_width="2dp"
-            app:civ_border_color="@color/menuWhite"
+            app:civ_border_color="@color/home_rank_no.1"
             android:layout_marginLeft="18dp"
             android:layout_centerVertical="true" />
 
         <TextView
-            android:id="@+id/menu_body_primary"
+            android:id="@+id/rank_nickname"
             android:text="nickname"
             android:textSize="14sp"
             android:textColor="@color/textDarkPrimary"
@@ -28,6 +28,7 @@
             android:layout_centerVertical="true"/>
 
         <TextView
+            android:id="@+id/rank_num"
             android:text="No.1"
             android:textStyle="bold"
             android:textSize="14sp"

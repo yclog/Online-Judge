@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="148dp">
+
+                <ImageView
+                    android:src="@mipmap/ring"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:layout_marginTop="12dp"
+                    android:layout_marginRight="16dp"
+                    android:layout_alignParentRight="true"/>
+
+                <com.graduation.appletree.onlinejudge.view.CircleImageView
+                    android:id="@+id/profile_avatar"
+                    android:src="@drawable/hugh"
+                    android:layout_width="96dp"
+                    android:layout_height="96dp"
+                    android:layout_marginTop="26dp"
+                    app:civ_border_width="2dp"
+                    app:civ_border_color="@color/backgroundWhite"
+                    android:layout_centerHorizontal="true"/>
+
+                <TextView
+                    android:id="@+id/profile_rank"
+                    android:text="No.1"
+                    android:textSize="16sp"
+                    android:textColor="@color/problemBoldText"
+                    android:textStyle="bold"
+                    android:layout_marginLeft="120dp"
+                    android:layout_marginBottom="2dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/profile_rate"
+                    android:text="23.6%"
+                    android:textSize="16sp"
+                    android:textColor="@color/profileAcceptRate"
+                    android:textStyle="bold"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="120dp"
+                    android:layout_marginBottom="2dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentRight="true"/>
+            </RelativeLayout>
+
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_marginLeft="32dp"
+                android:layout_marginRight="32dp"
+                android:layout_height="80dp">
+                <RelativeLayout
+                    android:id="@+id/profile_todo"
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <TextView
+                        android:id="@+id/profile_todo_text"
+                        android:text="741"
+                        android:textSize="16sp"
+                        android:layout_marginTop="20dp"
+                        android:textColor="@color/profileToDo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"/>
+                    <TextView
+                        android:text="Todo"
+                        android:textSize="16sp"
+                        android:textColor="@color/profileToDo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginBottom="16dp"/>
+                </RelativeLayout>
+                <RelativeLayout
+                    android:id="@+id/profile_solved"
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <TextView
+                        android:id="@+id/profile_solved_text"
+                        android:text="8/750"
+                        android:textSize="16sp"
+                        android:layout_marginTop="20dp"
+                        android:textColor="@color/profileSolved"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"/>
+                    <TextView
+                        android:text="Solved"
+                        android:textSize="15sp"
+                        android:textColor="@color/profileSolved"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginBottom="16dp"/>
+                </RelativeLayout>
+                <RelativeLayout
+                    android:id="@+id/profile_attempt"
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <TextView
+                        android:id="@+id/profile_attempt_text"
+                        android:text="1"
+                        android:textSize="16sp"
+                        android:layout_marginTop="20dp"
+                        android:textColor="@color/profileAttempted"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"/>
+                    <TextView
+                        android:text="Attempted"
+                        android:textSize="15sp"
+                        android:textColor="@color/profileAttempted"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginBottom="16dp"/>
+                </RelativeLayout>
+            </LinearLayout>
+
+            <!--分割区-->
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="8dp"></View>
+
+            <include layout="@layout/profile_progress"></include>
+
+            <include layout="@layout/profile_notebook"></include>
+
+            <include layout="@layout/profile_mylist"></include>
+
+            <include layout="@layout/profile_submission"></include>
+
+            <include layout="@layout/profile_session"></include>
+
+            <include layout="@layout/profile_point"></include>
+
+            <!--分割区-->
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="16dp"></View>
+
+            <include layout="@layout/profile_setting"></include>
+
+            <include layout="@layout/profile_connectus"></include>
+
+            <include layout="@layout/profile_aboutus"></include>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

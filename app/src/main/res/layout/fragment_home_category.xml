@@ -12,7 +12,7 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent">
             <ImageView
-                android:src="@mipmap/ic_launcher"
+                android:src="@mipmap/algorithm"
                 android:padding="4dp"
                 android:layout_width="60dp"
                 android:layout_height="38dp"
@@ -33,7 +33,7 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent">
             <ImageView
-                android:src="@mipmap/ic_launcher"
+                android:src="@mipmap/osystem"
                 android:padding="6dp"
                 android:layout_width="60dp"
                 android:layout_height="38dp"
@@ -54,7 +54,7 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent">
             <ImageView
-                android:src="@mipmap/ic_launcher"
+                android:src="@mipmap/database"
                 android:padding="4dp"
                 android:layout_width="60dp"
                 android:layout_height="38dp"
@@ -75,7 +75,7 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent">
             <ImageView
-                android:src="@mipmap/ic_launcher"
+                android:src="@mipmap/shell"
                 android:padding="6dp"
                 android:layout_width="60dp"
                 android:layout_height="38dp"
