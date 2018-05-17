@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:id="@+id/problem_item"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="36dp">
+
+    <ImageView
+        android:id="@+id/problem_attempted"
+        android:padding="13dp"
+        android:layout_marginLeft="8dp"
+        android:visibility="invisible"
+        android:src="@mipmap/problem_attempted"
+        android:layout_width="36dp"
+        android:layout_height="36dp" />
+
+    <ImageView
+        android:id="@+id/problem_accept"
+        android:padding="11dp"
+        android:layout_marginLeft="8dp"
+        android:visibility="visible"
+        android:src="@mipmap/problem_accept"
+        android:layout_width="36dp"
+        android:layout_height="36dp" />
+
+
+    <TextView
+        android:id="@+id/problem_num"
+        android:text="1"
+        android:textSize="14sp"
+        android:textColor="@color/problem_num"
+        android:layout_toRightOf="@id/problem_attempted"
+        android:layout_marginLeft="16dp"
+        android:layout_centerVertical="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/problem_title"
+        android:text="Two Sum"
+        android:textSize="14sp"
+        android:textColor="@color/problem_title"
+        android:layout_toRightOf="@+id/problem_num"
+        android:layout_marginLeft="22dp"
+        android:layout_centerVertical="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <ImageView
+        android:id="@+id/problem_hint"
+        android:padding="10dp"
+        android:src="@mipmap/problem_hint"
+        android:layout_toLeftOf="@id/problem_rate"
+        android:layout_marginRight="18dp"
+        android:layout_width="36dp"
+        android:layout_height="36dp" />
+
+    <TextView
+        android:id="@+id/problem_rate"
+        android:text="38.2%"
+        android:textSize="14sp"
+        android:textColor="@color/problem_rate"
+        android:layout_toLeftOf="@id/problem_easy"
+        android:layout_marginRight="18dp"
+        android:layout_centerVertical="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/problem_easy"
+        android:text="Easy"
+        android:textSize="12sp"
+        android:paddingLeft="10dp"
+        android:paddingBottom="2dp"
+        android:textColor="@color/textWhite"
+        android:background="@drawable/problem_easy"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="10dp"
+        android:layout_width="42dp"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/problem_hard"
+        android:text="Hard"
+        android:textSize="10sp"
+        android:visibility="gone"
+        android:paddingLeft="10dp"
+        android:paddingBottom="2dp"
+        android:textColor="@color/textWhite"
+        android:background="@drawable/problem_hard"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="10dp"
+        android:layout_width="42dp"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/problem_medium"
+        android:text="Medium"
+        android:textSize="12sp"
+        android:visibility="gone"
+        android:paddingLeft="10dp"
+        android:paddingBottom="2dp"
+        android:textColor="@color/textWhite"
+        android:background="@drawable/problem_medium"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="10dp"
+        android:layout_width="63dp"
+        android:layout_height="wrap_content" />
+
+</RelativeLayout>

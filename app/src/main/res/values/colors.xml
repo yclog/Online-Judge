@@ -13,6 +13,11 @@
     <color name="menuWhite">#f5f5f5</color>
     <color name="menuItemWhite">#ffffff</color>
 
+    <color name="bottom_text">#666666</color>
+    <color name="bottom_icon">#666666</color>
+    <color name="bottom_text_active">#f0a434</color>
+    <color name="bottom_icon_active">#f0a434</color>
+
     <color name="shadowGrey">#dddddd</color>
 
     <color name="codeLabel">#5bc0de</color>
@@ -25,8 +30,27 @@
     <color name="home_rank_no.2">#ededed</color>
     <color name="home_rank_no.3">#ecb185</color>
 
+    <color name="rank_grade">#f0a434</color>
+
+    <color name="problem_background">#ffffff</color>
+    <color name="problem_background_grey">#fafafa</color>
+    <color name="problem_num">#808080</color>
+    <color name="problem_title">#1596d4</color>
+    <color name="problem_hint">#1589ca</color>
+    <color name="problem_rate">#808080</color>
+    <color name="problem_easy">#5fb760</color>
+    <color name="problem_medium">#efac56</color>
+    <color name="problem_hard">#d75452</color>
+    <color name="problemSubmit">#337ab7</color>
+    <color name="problemNotes">#f1b55f</color>
+    <color name="problemTextWhite">#f2fffa</color>
+    <color name="problemTextBlack">#333333</color>
+    <color name="problemTextBlue">#0088cc</color>
+    <color name="problemTextYellow">#fea116</color>
+    <color name="problemBoldText">#333333</color>
+
     <color name="textDarkLight">#d7d7d7</color>
-    <color name="textWhtie">#f9f9f9</color>
+    <color name="textWhite">#f9f9f9</color>
     <color name="textDarkPrimary">#333333</color>
     <color name="textBoldDarkPrimary">#555555</color>
 
@@ -41,26 +65,6 @@
     <color name="discussBoldText">#333333</color>
     <color name="discussLightText">#777777</color>
     <color name="discussTextBlue">#3f88cf</color>
-
-    <color name="exerciseOrderTag">#333333</color>
-    <color name="exerciseBoldText">#333333</color>
-    <color name="exerciseNum">#808080</color>
-    <color name="exerciseTitle">#0096da</color>
-    <color name="exerciseSolution">#0088cc</color>
-    <color name="exerciseAcceptRate">#808080</color>
-    <color name="exerciseEasy">#5cb85c</color>
-    <color name="exerciseMedium">#f0ad4e</color>
-    <color name="exerciseHard">#d9534f</color>
-    <color name="exerciseStatusAccept">#449d44</color>
-    <color name="exerciseStatusNoAccept">#0088cd</color>
-    <color name="exerciseStatusUndo">#fafafa</color>
-    <color name="problemSubmit">#337ab7</color>
-    <color name="problemNotes">#f1b55f</color>
-    <color name="problemTextWhite">#f2fffa</color>
-    <color name="problemTextBlack">#333333</color>
-    <color name="problemTextBlue">#0088cc</color>
-    <color name="problemTextYellow">#fea116</color>
-    <color name="problemBoldText">#333333</color>
 
     <color name="profileBoldName">#333333</color>
     <color name="profileToDo">#33a3dd</color>

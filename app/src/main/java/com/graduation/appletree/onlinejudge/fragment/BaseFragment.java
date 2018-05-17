@@ -16,12 +16,15 @@ import de.greenrobot.event.ThreadMode;
 
 public abstract class BaseFragment extends Fragment{
 
+    View rootView;
+
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-        View view = inflater.inflate(getContentViewLayoutID(), container, false);
+        rootView = inflater.inflate(getContentViewLayoutID(), container, false);
         initViewAndEvent();
-        return view;
+        EventBus.getDefault().register(this);
+        return rootView;
     }
 
     @Override
@@ -56,6 +59,10 @@ public abstract class BaseFragment extends Fragment{
     protected void readyGoForResult(Class<?> targetClass,int requestCode){
         Intent intent = new Intent(getContext(), targetClass);
         startActivityForResult(intent, requestCode);
+    }
+
+    protected View getRootView(){
+        return rootView;
     }
 
     /**
