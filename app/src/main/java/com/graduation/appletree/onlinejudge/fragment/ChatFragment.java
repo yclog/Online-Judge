@@ -35,14 +35,6 @@ public class ChatFragment extends BaseFragment implements View.OnClickListener{
     protected RelativeLayout chat_vp_two;
     protected RelativeLayout chat_vp_three;
 
-    protected ImageView chat_vp_one_icon;
-    protected ImageView chat_vp_two_icon;
-    protected ImageView chat_vp_three_icon;
-
-    protected View chat_vp_one_line;
-    protected View chat_vp_two_line;
-    protected View chat_vp_three_line;
-
     @Override
     protected int getContentViewLayoutID() {
         return R.layout.fragment_chat;

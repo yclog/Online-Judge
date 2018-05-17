@@ -19,7 +19,7 @@
                 android:layout_height="148dp">
 
                 <ImageView
-                    android:id="@+id/profile_ring"
+                    android:id="@+id/profile_message"
                     android:src="@mipmap/ring"
                     android:layout_width="24dp"
                     android:layout_height="24dp"
@@ -28,7 +28,7 @@
                     android:layout_alignParentRight="true"/>
 
                 <com.graduation.appletree.onlinejudge.view.CircleImageView
-                    android:id="@+id/profile_ring_status"
+                    android:id="@+id/profile_message_status"
                     android:src="@color/chat_busy"
                     android:visibility="gone"
                     android:elevation="2dp"
@@ -50,6 +50,16 @@
                     app:civ_border_width="2dp"
                     app:civ_border_color="@color/backgroundWhite"
                     android:layout_centerHorizontal="true"/>
+
+                <TextView
+                    android:text="登陆"
+                    android:textColor="@color/titlebarTextLight"
+                    android:visibility="gone"
+                    android:elevation="2dp"
+                    android:layout_marginTop="98dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
 
                 <TextView
                     android:id="@+id/profile_rank"

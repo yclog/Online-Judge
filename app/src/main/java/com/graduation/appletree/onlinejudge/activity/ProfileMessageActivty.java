@@ -1,13 +1,15 @@
-package com.graduation.appletree.onlinejudge.fragment;
+package com.graduation.appletree.onlinejudge.activity;
+
+import android.content.Context;
 
 import com.graduation.appletree.onlinejudge.R;
 import com.graduation.appletree.onlinejudge.eventbus.EventCenter;
 
-public class PersonalFragment extends BaseFragment{
+public class ProfileMessageActivty extends BaseActivity{
 
     @Override
     protected int getContentViewLayoutID() {
-        return R.layout.fragment_profile;
+        return R.layout.activity_profile_message;
     }
 
     @Override
@@ -18,5 +20,10 @@ public class PersonalFragment extends BaseFragment{
     @Override
     protected void onEventComing(EventCenter eventCenter) {
 
+    }
+
+    @Override
+    protected Context getContext() {
+        return null;
     }
 }

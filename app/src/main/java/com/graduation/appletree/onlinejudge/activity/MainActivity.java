@@ -13,7 +13,7 @@ import com.graduation.appletree.onlinejudge.eventbus.EventCode;
 import com.graduation.appletree.onlinejudge.fragment.ChatFragment;
 import com.graduation.appletree.onlinejudge.fragment.DiscussFragment;
 import com.graduation.appletree.onlinejudge.fragment.HomeFragment;
-import com.graduation.appletree.onlinejudge.fragment.PersonalFragment;
+import com.graduation.appletree.onlinejudge.fragment.ProfileFragment;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -78,7 +78,7 @@ public class MainActivity extends BaseActivity {
         mFragmentList.add(new HomeFragment());
         mFragmentList.add(new DiscussFragment());
         mFragmentList.add(new ChatFragment());
-        mFragmentList.add(new PersonalFragment());
+        mFragmentList.add(new ProfileFragment());
         /**
          * 添加Viewpager滑动监听事件
          * */

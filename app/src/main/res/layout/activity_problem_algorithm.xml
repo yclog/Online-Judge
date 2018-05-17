@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:id="@+id/problem_item"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <android.support.v7.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:elevation="4dp"
+        android:background="@color/titlebarDark">
+
+        <TextView
+            android:text="ALGORITHM"
+            android:textStyle="bold"
+            android:textColor="@color/titlebarTextLight"
+            android:letterSpacing="0.4"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </android.support.v7.widget.Toolbar>
+
+    <include layout="@layout/algorithm_title"></include>
+
+    <include layout="@layout/shadowline"></include>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_problem_algorithm"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    </android.support.v7.widget.RecyclerView>
+
+</LinearLayout>

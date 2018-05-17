@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/chat_vp_background"
+    android:layout_width="match_parent"
+    android:layout_height="52dp">
+
+    <com.graduation.appletree.onlinejudge.view.CircleImageView
+        android:id="@+id/chat_message_avatar"
+        android:src="@drawable/hugh"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginLeft="18dp"
+        android:layout_centerVertical="true" />
+
+    <TextView
+        android:id="@+id/chat_message_name"
+        android:text="Hello World , To be a better man"
+        android:textSize="14sp"
+        android:textColor="@color/chat_vp_message"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="16dp"
+        android:layout_toRightOf="@+id/chat_message_avatar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <ImageView
+        android:id="@+id/chat_message_icon"
+        android:src="@mipmap/chat_message"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="12dp"
+        android:layout_toRightOf="@+id/chat_message_avatar" />
+
+    <TextView
+        android:id="@+id/chat_message_time"
+        android:text="21:07"
+        android:textSize="10sp"
+        android:textColor="@color/textWhite"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="4dp"
+        android:layout_toRightOf="@+id/chat_message_icon"
+        android:layout_marginTop="32.6dp" />
+
+</RelativeLayout>

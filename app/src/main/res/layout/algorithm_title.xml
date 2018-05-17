@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:id="@+id/problem_item"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="36dp">
+
+    <TextView
+        android:id="@+id/problem_num"
+        android:text="#"
+        android:textStyle="bold"
+        android:textSize="14sp"
+        android:textColor="@color/problem_menu_dark"
+        android:layout_marginLeft="52dp"
+        android:layout_centerVertical="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/problem_title"
+        android:text="Title"
+        android:textStyle="bold"
+        android:textSize="14sp"
+        android:textColor="@color/problem_menu_dark"
+        android:layout_toRightOf="@+id/problem_num"
+        android:layout_marginLeft="22dp"
+        android:layout_centerVertical="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/problem_hint"
+        android:text="Solution"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        android:textColor="@color/problem_menu_dark"
+        android:layout_toLeftOf="@id/problem_rate"
+        android:layout_marginRight="18dp"
+        android:layout_centerVertical="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/problem_rate"
+        android:text="Acceptance"
+        android:textStyle="bold"
+        android:textSize="14sp"
+        android:textColor="@color/problem_menu_dark"
+        android:layout_toLeftOf="@id/problem_easy"
+        android:layout_marginRight="18dp"
+        android:layout_centerVertical="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/problem_easy"
+        android:text="Difficulty"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        android:paddingLeft="3dp"
+        android:textColor="@color/problem_menu_dark"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="10dp"
+        android:layout_width="70dp"
+        android:layout_height="wrap_content" />
+
+
+</RelativeLayout>

@@ -1,3 +1,22 @@
 <resources>
     <string name="app_name">Online Judge</string>
+    <string name="problem_content_sample">
+        Given an array of integers, return indices of the two numbers such that they add up to a specific target.
+        You may assume that each input would have exactly one solution, and you may not use the same element twice.
+    </string>
+    <string name="problem_example_sample">
+        Given nums = [2, 7, 11, 15], target = 9\nBecause nums[0] + nums[1] = 2 + 7 = 9\nreturn [0, 1]
+    </string>
+    <string name="problem_solution_sample">
+        public int[] twoSum(int[] nums, int target) {\n
+            for (int i = 0; i < nums.length; i++) {\n
+                for (int j = i + 1; j < nums.length; j++) {\n
+                    if (nums[j] == target - nums[i]) {\n
+                        return new int[] { i, j };\n
+                    }\n
+                }\n
+            }\n
+            throw new IllegalArgumentException("No two sum solution");\n
+        }\n
+    </string>
 </resources>

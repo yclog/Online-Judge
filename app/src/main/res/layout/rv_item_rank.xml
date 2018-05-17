@@ -7,7 +7,7 @@
         android:layout_height="48dp">
 
         <com.graduation.appletree.onlinejudge.view.CircleImageView
-            android:id="@+id/rank_avatar"
+            android:id="@+id/contact_avatar"
             android:src="@drawable/hugh"
             android:layout_width="36dp"
             android:layout_height="36dp"
@@ -17,12 +17,12 @@
             android:layout_centerVertical="true" />
 
         <TextView
-            android:id="@+id/rank_nickname"
+            android:id="@+id/contact_nickname"
             android:text="nickname"
             android:textSize="14sp"
             android:textColor="@color/textDarkPrimary"
             android:layout_marginLeft="16dp"
-            android:layout_toRightOf="@+id/rank_avatar"
+            android:layout_toRightOf="@+id/contact_avatar"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_centerVertical="true"/>
