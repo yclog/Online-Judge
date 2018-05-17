@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout
-    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
     android:layout_height="match_parent">
 
     <android.support.v7.widget.Toolbar
@@ -9,11 +12,51 @@
         android:elevation="4dp"
         android:background="@color/titlebarDark">
 
+        <FrameLayout
+            android:layout_width="38dp"
+            android:layout_height="30dp">
+
+            <com.graduation.appletree.onlinejudge.view.CircleImageView
+                android:id="@+id/chat_avatar"
+                android:src="@drawable/hugh"
+                android:layout_marginLeft="8dp"
+                app:civ_border_width="1px"
+                app:civ_border_color="@color/circle_image_border_white"
+                android:layout_width="30dp"
+                android:layout_height="30dp" />
+
+            <com.graduation.appletree.onlinejudge.view.CircleImageView
+                android:id="@+id/chat_avatar_status"
+                android:src="@color/chat_online"
+                android:layout_width="6dp"
+                android:layout_height="6dp"
+                android:layout_marginLeft="31dp"
+                android:layout_marginTop="23dp"
+                app:civ_border_width="1px"
+                app:civ_border_color="@color/circle_image_border_white" />
+        </FrameLayout>
+
         <TextView
-            android:text="Chat"
+            android:text="CHAT"
+            android:textStyle="bold"
             android:textColor="@color/titlebarTextLight"
+            android:letterSpacing="0.4"
+            android:layout_gravity="center"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content" />
     </android.support.v7.widget.Toolbar>
 
-</android.support.constraint.ConstraintLayout>
+    <fragment
+        android:id="@+id/chat_talk_menu"
+        tools:layout="@layout/fragment_chat_vp_menu"
+        android:name="com.graduation.appletree.onlinejudge.fragment.ChatTalkMenuFragment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"></fragment>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/chat_vp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    </android.support.v4.view.ViewPager>
+
+</LinearLayout>

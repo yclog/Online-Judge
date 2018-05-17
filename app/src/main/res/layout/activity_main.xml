@@ -23,7 +23,7 @@
         android:id="@+id/menu_fragment"
         tools:layout="@layout/fragment_bottom_menu"
         android:layout_alignParentBottom="true"
-        android:name="com.graduation.appletree.onlinejudge.fragment.bottom_menu_fragment"
+        android:name="com.graduation.appletree.onlinejudge.fragment.MainBottomFragment"
         android:layout_width="match_parent"
         android:layout_height="56dp"></fragment>
 

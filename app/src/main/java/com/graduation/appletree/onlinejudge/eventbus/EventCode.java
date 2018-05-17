@@ -15,8 +15,15 @@ public interface EventCode {
     /**
      * Bottom Menu EventCode
      * */
-    final static int BOTTOM_MENU_ONE_ACTIVE = 0;
-    final static int BOTTOM_MENU_TWO_ACTIVE = 1;
-    final static int BOTTOM_MENU_THREE_ACTIVE = 2;
-    final static int BOTTOM_MENU_FOUR_ACTIVE = 3;
+    int BOTTOM_MENU_ONE_ACTIVE = 0;
+    int BOTTOM_MENU_TWO_ACTIVE = 1;
+    int BOTTOM_MENU_THREE_ACTIVE = 2;
+    int BOTTOM_MENU_FOUR_ACTIVE = 3;
+
+    /**
+     * Chat Talk EventCode
+     * */
+    int CHAT_TALK_ONE_ACTIVE = 4;
+    int CHAT_TALK_TWO_ACTIVE = 5;
+    int CHAT_TALK_THREE_ACTIVE = 6;
 }

@@ -92,6 +92,28 @@ public class MainActivity extends BaseActivity {
             @Override
             public void onPageSelected(int position) {
                 //该方法为当前选定页面事件
+                switch (position){
+                    case BOTTOM_PAGE_ONE:{
+                        EventBus.getDefault().post(new EventCenter<>(mCurrentPage, EventCode.BOTTOM_MENU_ONE_ACTIVE));
+                        mCurrentPage = BOTTOM_PAGE_ONE;
+                        break;
+                    }
+                    case BOTTOM_PAGE_TWO:{
+                        EventBus.getDefault().post(new EventCenter<>(mCurrentPage, EventCode.BOTTOM_MENU_TWO_ACTIVE));
+                        mCurrentPage = BOTTOM_PAGE_TWO;
+                        break;
+                    }
+                    case BOTTOM_PAGE_THREE:{
+                        EventBus.getDefault().post(new EventCenter<>(mCurrentPage, EventCode.BOTTOM_MENU_THREE_ACTIVE));
+                        mCurrentPage = BOTTOM_PAGE_THREE;
+                        break;
+                    }
+                    case BOTTOM_PAGE_FOUR:{
+                        EventBus.getDefault().post(new EventCenter<>(mCurrentPage, EventCode.BOTTOM_MENU_FOUR_ACTIVE));
+                        mCurrentPage = BOTTOM_PAGE_FOUR;
+                        break;
+                    }
+                }
             }
 
             @Override
@@ -114,26 +136,18 @@ public class MainActivity extends BaseActivity {
         switch (view.getId()){
             case R.id.bottom_menu_one:{
                 homeVP.setCurrentItem(BOTTOM_PAGE_ONE);
-                EventBus.getDefault().post(new EventCenter<>(mCurrentPage, EventCode.BOTTOM_MENU_ONE_ACTIVE));
-                mCurrentPage = BOTTOM_PAGE_ONE;
                 break;
             }
             case R.id.bottom_menu_two:{
                 homeVP.setCurrentItem(BOTTOM_PAGE_TWO);
-                EventBus.getDefault().post(new EventCenter<>(mCurrentPage, EventCode.BOTTOM_MENU_TWO_ACTIVE));
-                mCurrentPage = BOTTOM_PAGE_TWO;
                 break;
             }
             case R.id.bottom_menu_three:{
                 homeVP.setCurrentItem(BOTTOM_PAGE_THREE);
-                EventBus.getDefault().post(new EventCenter<>(mCurrentPage, EventCode.BOTTOM_MENU_THREE_ACTIVE));
-                mCurrentPage = BOTTOM_PAGE_THREE;
                 break;
             }
             case R.id.bottom_menu_four:{
                 homeVP.setCurrentItem(BOTTOM_PAGE_FOUR);
-                EventBus.getDefault().post(new EventCenter<>(mCurrentPage, EventCode.BOTTOM_MENU_FOUR_ACTIVE));
-                mCurrentPage = BOTTOM_PAGE_FOUR;
                 break;
             }
         }

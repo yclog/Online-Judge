@@ -12,7 +12,7 @@ import com.graduation.appletree.onlinejudge.eventbus.EventCode;
 import butterknife.BindInt;
 import butterknife.BindView;
 
-public class bottom_menu_fragment extends BaseFragment{
+public class MainBottomFragment extends BaseFragment{
 
     private final String TAG = this.getClass().getName();
 
@@ -43,24 +43,27 @@ public class bottom_menu_fragment extends BaseFragment{
 
     @Override
     protected void onEventComing(EventCenter eventCenter) {
-        resetView(eventCenter);
         switch (eventCenter.getEventCode()){
             case EventCode.BOTTOM_MENU_ONE_ACTIVE:{
+                resetView(eventCenter);
                 bottom_menu_one_icon.setImageResource(R.mipmap.bottom_home_active);
                 bottom_menu_one_text.setTextColor(getResources().getColor(R.color.bottom_text_active));
                 break;
             }
             case EventCode.BOTTOM_MENU_TWO_ACTIVE:{
+                resetView(eventCenter);
                 bottom_menu_two_icon.setImageResource(R.mipmap.bottom_discuss_active);
                 bottom_menu_two_text.setTextColor(getResources().getColor(R.color.bottom_text_active));
                 break;
             }
             case EventCode.BOTTOM_MENU_THREE_ACTIVE:{
+                resetView(eventCenter);
                 bottom_menu_three_icon.setImageResource(R.mipmap.bottom_chat_active);
                 bottom_menu_three_text.setTextColor(getResources().getColor(R.color.bottom_text_active));
                 break;
             }
             case EventCode.BOTTOM_MENU_FOUR_ACTIVE:{
+                resetView(eventCenter);
                 bottom_menu_four_icon.setImageResource(R.mipmap.bottom_profile_active);
                 bottom_menu_four_text.setTextColor(getResources().getColor(R.color.bottom_text_active));
                 break;
@@ -85,12 +88,6 @@ public class bottom_menu_fragment extends BaseFragment{
         bottom_menu_two_icon = getRootView().findViewById(R.id.bottom_menu_two_icon);
         bottom_menu_three_icon = getRootView().findViewById(R.id.bottom_menu_three_icon);
         bottom_menu_four_icon = getRootView().findViewById(R.id.bottom_menu_four_icon);
-
-        /**
-         * Initialize default status
-         * */
-        bottom_menu_one_icon.setImageResource(R.mipmap.bottom_home_active);
-        bottom_menu_one_text.setTextColor(getResources().getColor(R.color.bottom_text_active));
     }
 
     private void resetView(EventCenter eventCenter){

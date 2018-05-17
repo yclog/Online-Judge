@@ -1,14 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <color name="colorPrimary">#3F51B5</color>
-    <color name="colorPrimaryDark">#323232</color>
+    <color name="colorPrimaryDark">#343e49</color>
     <color name="backgroundWhite">#f9f9f9</color>
 
     <color name="topestLightDark">#323232</color>
-    <color name="titlebarDark">#222222</color>
+    <color name="titlebarDark">#343e49</color>
     <color name="titlebarTextLight">#d7d7d7</color>
     <color name="titlebarTextGrey">#9d9d9d</color>
     <color name="titlebarSelectedTextGrey">#ffffff</color>
+
+    <color name="circle_image_border_white">#f9f9f9</color>
 
     <color name="menuWhite">#f5f5f5</color>
     <color name="menuItemWhite">#ffffff</color>
@@ -31,6 +33,17 @@
     <color name="home_rank_no.3">#ecb185</color>
 
     <color name="rank_grade">#f0a434</color>
+
+    <color name="red_dot">#f64845</color>
+
+    <color name="chat_online">#61d896</color>
+    <color name="chat_busy">#f3696b</color>
+    <color name="chat_offline">#4e5a67</color>
+    <color name="chat_vp">#2f3740</color>
+    <color name="chat_vp_active">#f9f9f9</color>
+    <color name="chat_vp_background">#2f3740</color>
+    <color name="chat_vp_talk_name_text">#e4e5e6</color>
+    <color name="chat_vp_talk_brief_text">#717d87</color>
 
     <color name="problem_background">#ffffff</color>
     <color name="problem_background_grey">#fafafa</color>
