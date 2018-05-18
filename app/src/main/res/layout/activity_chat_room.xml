@@ -2,6 +2,7 @@
 <LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical"
+    android:background="@color/backgroundTotalWhite"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
@@ -65,11 +66,13 @@
         <EditText
             android:hint="Type a Message"
             android:textSize="14sp"
-            android:elevation="4dp"
             android:layout_weight="1"
             android:textColorHint="@color/chat_room_input_hint"
-            android:background="@color/chat_room_input_background"
+            android:background="@drawable/chat_room_input"
             android:singleLine="false"
+            android:layout_marginTop="4dp"
+            android:layout_marginBottom="4dp"
+            android:layout_marginLeft="6dp"
             android:paddingLeft="8dp"
             android:layout_width="wrap_content"
             android:layout_height="match_parent" />
@@ -78,7 +81,7 @@
             android:id="@+id/chat_room_input_send"
             android:src="@mipmap/chat_room_input_send"
             android:padding="10dp"
-            android:layout_width="56dp"
+            android:layout_width="52dp"
             android:layout_height="42dp" />
     </LinearLayout>
 

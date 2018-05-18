@@ -173,30 +173,28 @@
                 android:layout_width="match_parent"
                 android:layout_height="8dp"></View>
 
+            <include layout="@layout/profile_point"></include>
+
             <include layout="@layout/profile_progress"></include>
-
-            <include layout="@layout/profile_notebook"></include>
-
-            <include layout="@layout/profile_mylist"></include>
 
             <include layout="@layout/profile_submission"></include>
 
             <include layout="@layout/profile_session"></include>
 
-            <include layout="@layout/profile_point"></include>
+            <include layout="@layout/profile_notebook"></include>
+
+            <include layout="@layout/profile_mylist"></include>
 
             <!--分割区-->
             <View
                 android:layout_width="match_parent"
                 android:layout_height="16dp"></View>
 
-            <include layout="@layout/profile_setting"></include>
-
             <include layout="@layout/profile_connectus"></include>
 
             <include layout="@layout/profile_aboutus"></include>
 
-
+            <include layout="@layout/profile_setting"></include>
             <!--分割区-->
             <View
                 android:layout_width="match_parent"

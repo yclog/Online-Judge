@@ -3,6 +3,7 @@
     <color name="colorPrimary">#3F51B5</color>
     <color name="colorPrimaryDark">#343e49</color>
     <color name="backgroundWhite">#f9f9f9</color>
+    <color name="backgroundTotalWhite">#f9f9f9</color>
 
     <color name="topestLightDark">#323232</color>
     <color name="titlebarDark">#343e49</color>
@@ -108,6 +109,9 @@
     <color name="profileNotes">#fea650</color>
     <color name="pointMarket">#fea116</color>
 
+    <color name="profile_feedback_content_hint">#757575</color>
+    <color name="profile_feedback_content">#333333</color>
+    <color name="profile_feedback_button">#343e49</color>
 
     <color name="loginout">#d85451</color>
 

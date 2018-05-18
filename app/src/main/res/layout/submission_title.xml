@@ -1,69 +1,55 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout
+<LinearLayout
     android:id="@+id/problem_item"
     xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
     android:layout_width="match_parent"
     android:layout_height="36dp">
 
     <TextView
-        android:id="@+id/submission_title_time"
-        android:text="#"
-        android:textStyle="bold"
-        android:textSize="14sp"
-        android:textColor="@color/problem_menu_dark"
-        android:layout_marginLeft="52dp"
-        android:layout_centerVertical="true"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
-
-    <TextView
         android:id="@+id/submission_title_question"
-        android:text="Title"
+        android:text="Question"
         android:textStyle="bold"
         android:textSize="14sp"
+        android:layout_weight="1"
         android:textColor="@color/problem_menu_dark"
-        android:layout_toRightOf="@+id/submission_title_time"
-        android:layout_marginLeft="22dp"
-        android:layout_centerVertical="true"
+        android:paddingLeft="22dp"
+        android:layout_gravity="center_vertical"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content" />
 
     <TextView
         android:id="@+id/submission_title_status"
-        android:text="Solution"
+        android:text="Status"
         android:textSize="14sp"
         android:textStyle="bold"
+        android:layout_weight="1"
         android:textColor="@color/problem_menu_dark"
-        android:layout_toLeftOf="@id/submission_title_runtime"
-        android:layout_marginRight="18dp"
-        android:layout_centerVertical="true"
+        android:layout_gravity="center_vertical"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content" />
 
     <TextView
         android:id="@+id/submission_title_runtime"
-        android:text="Acceptance"
-        android:textStyle="bold"
+        android:text="Runtime"
         android:textSize="14sp"
+        android:textStyle="bold"
+        android:layout_weight="1"
         android:textColor="@color/problem_menu_dark"
-        android:layout_toLeftOf="@id/submission_title_language"
-        android:layout_marginRight="18dp"
-        android:layout_centerVertical="true"
+        android:layout_gravity="center_vertical"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content" />
 
     <TextView
         android:id="@+id/submission_title_language"
-        android:text="Difficulty"
+        android:text="Language"
         android:textSize="14sp"
-        android:textStyle="bold"
+        android:layout_weight="1"
         android:paddingLeft="3dp"
+        android:textStyle="bold"
         android:textColor="@color/problem_menu_dark"
-        android:layout_alignParentRight="true"
-        android:layout_centerVertical="true"
-        android:layout_marginRight="10dp"
+        android:layout_gravity="center_vertical"
         android:layout_width="70dp"
         android:layout_height="wrap_content" />
 
-
-</RelativeLayout>
+</LinearLayout>

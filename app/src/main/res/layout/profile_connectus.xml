@@ -10,7 +10,6 @@
         android:src="@mipmap/chat"
         android:layout_width="22dp"
         android:layout_height="22dp"
-        android:padding="1dp"
         android:layout_marginLeft="28dp"
         android:layout_centerVertical="true"/>
 

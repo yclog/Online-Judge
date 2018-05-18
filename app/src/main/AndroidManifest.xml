@@ -23,6 +23,8 @@
         <activity android:name=".activity.ProblemAlgorithmActivity"></activity>
         <activity android:name=".activity.ProfileMessageActivity"></activity>
         <activity android:name=".activity.ProblemDetailsActivity"></activity>
+        <activity android:name=".activity.ProfileSubmisisonActivity"></activity>
+        <activity android:name=".activity.ProfileConnectUsActivity"></activity>
     </application>
 
 </manifest>

@@ -9,13 +9,13 @@ import com.graduation.appletree.onlinejudge.eventbus.EventCenter;
 
 import butterknife.BindView;
 
-public class ProfileMessageActivity extends BaseActivity{
+public class ProfileConnectUsActivity extends BaseActivity{
     @BindView(R.id.titlebar_back)
     protected ImageView titlebar_back;
 
     @Override
     protected int getContentViewLayoutID() {
-        return R.layout.activity_profile_message;
+        return R.layout.activity_profile_connectus;
     }
 
     @Override
@@ -41,7 +41,7 @@ public class ProfileMessageActivity extends BaseActivity{
         titlebar_back.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                ProfileMessageActivity.this.finish();
+                ProfileConnectUsActivity.this.finish();
             }
         });
     }

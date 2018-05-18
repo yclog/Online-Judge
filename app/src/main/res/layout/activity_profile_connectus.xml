@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.v7.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:elevation="4dp"
+        android:background="@color/titlebarDark">
+
+        <ImageView
+            android:id="@+id/titlebar_back"
+            android:src="@mipmap/back"
+            android:padding="5dp"
+            android:layout_width="26dp"
+            android:layout_height="26dp" />
+
+        <TextView
+            android:text="TALK TO US"
+            android:textStyle="bold"
+            android:textColor="@color/titlebarTextLight"
+            android:letterSpacing="0.4"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </android.support.v7.widget.Toolbar>
+
+    <EditText
+        android:id="@+id/profile_connectus_advice"
+        android:textColor="@color/profile_feedback_content"
+        android:hint="@string/profile_connectus_advice_hint"
+        android:textColorHint="@color/profile_feedback_content_hint"
+        android:textSize="15sp"
+        android:gravity="top"
+        android:padding="4dp"
+        android:lineSpacingExtra="2dp"
+        android:inputType="textMultiLine"
+        android:lines="8"
+        android:background="@drawable/profile_connectus"
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="160dp" />
+    
+    <EditText
+        android:id="@+id/profile_connectus_contact"
+        android:textSize="15sp"
+        android:textColor="@color/profile_feedback_content"
+        android:hint="@string/profile_connectus_contact_hint"
+        android:background="@drawable/profile_connectus"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:paddingLeft="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="40dp" />
+
+    <Button
+        android:id="@+id/button_feedback_submit"
+        android:layout_width="match_parent"
+        android:layout_height="42dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/common_button"
+        android:text="提交"
+        android:textColor="@color/textWhite" />
+
+</LinearLayout>
