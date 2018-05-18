@@ -6,7 +6,7 @@
 
     <color name="topestLightDark">#323232</color>
     <color name="titlebarDark">#343e49</color>
-    <color name="titlebarTextLight">#d7d7d7</color>
+    <color name="titlebarTextLight">#ffffff</color>
     <color name="titlebarTextGrey">#9d9d9d</color>
     <color name="titlebarSelectedTextGrey">#ffffff</color>
 
@@ -17,8 +17,8 @@
 
     <color name="bottom_text">#666666</color>
     <color name="bottom_icon">#666666</color>
-    <color name="bottom_text_active">#f0a434</color>
-    <color name="bottom_icon_active">#f0a434</color>
+    <color name="bottom_text_active">#fea116</color>
+    <color name="bottom_icon_active">#fea116</color>
 
     <color name="shadowGrey">#dddddd</color>
 
@@ -28,11 +28,11 @@
     <color name="error">#d9534f</color>
     <color name="acceptRate">#5bc0de</color>
 
-    <color name="home_rank_no.1">#dfb740</color>
+    <color name="home_rank_no.1">#fea116</color>
     <color name="home_rank_no.2">#ededed</color>
     <color name="home_rank_no.3">#ecb185</color>
 
-    <color name="rank_grade">#f0a434</color>
+    <color name="rank_grade">#fea116</color>
 
     <color name="red_dot">#f64845</color>
 
@@ -45,6 +45,9 @@
     <color name="chat_vp_background">#2f3740</color>
     <color name="chat_vp_name_text">#e4e5e6</color>
     <color name="chat_vp_brief_text">#717d87</color>
+
+    <color name="chat_room_input_hint">#cdcdcd</color>
+    <color name="chat_room_input_background">#f9f9f9</color>
 
     <color name="problem_title_text">#222222</color>
     <color name="problem_content_text">#333333</color>

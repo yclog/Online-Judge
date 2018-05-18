@@ -16,7 +16,7 @@ import rx.schedulers.Schedulers;
 /**
  * Created by luke on 2018/3/21.
  * Network Utils
- * RxJava + Retrofit
+ * RxJava + Retrofit + OkHttp
  */
 
 public class NetRequestUtil {
@@ -24,12 +24,14 @@ public class NetRequestUtil {
     private static NetRequestUtil NetRequestUtilInstance;
     private SearchService searchService;
     private Retrofit mRetrofit;
-    private String baseUrl = "http://www.roundsapp.com/";
+    private String baseUrl = "https://github.com/yclog/Online-Judge/blob/master/";
 
     public static final MediaType JSON
             = MediaType.parse("application/json; charset=utf-8");
 
-    //SingleTon
+    /**
+     * Singleton
+     * */
     public static NetRequestUtil getInstance() {
         if (NetRequestUtilInstance == null) {
             synchronized (NetRequestUtil.class) {

@@ -5,7 +5,7 @@ import android.content.Context;
 import com.graduation.appletree.onlinejudge.R;
 import com.graduation.appletree.onlinejudge.eventbus.EventCenter;
 
-public class ProfileMessageActivty extends BaseActivity{
+public class ProfileMessageActivity extends BaseActivity{
 
     @Override
     protected int getContentViewLayoutID() {

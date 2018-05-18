@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.v7.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:elevation="4dp"
+        android:background="@color/titlebarDark">
+
+        <ImageView
+            android:id="@+id/titlebar_back"
+            android:src="@mipmap/back"
+            android:padding="5dp"
+            android:layout_width="26dp"
+            android:layout_height="26dp" />
+
+        <TextView
+            android:id="@+id/chat_room_name"
+            android:text="猫哥"
+            android:textStyle="bold"
+            android:textColor="@color/titlebarTextLight"
+            android:letterSpacing="0.4"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </android.support.v7.widget.Toolbar>
+    
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_chat_room_message"
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    </android.support.v7.widget.RecyclerView>
+
+    <include layout="@layout/shadowline"></include>
+    
+    <LinearLayout
+        android:gravity="end"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="42dp">
+
+        <ImageView
+            android:id="@+id/chat_room_input_add"
+            android:src="@mipmap/chat_room_input_add"
+            android:padding="7dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="4dp"
+            android:layout_width="28dp"
+            android:layout_height="28dp" />
+
+        <ImageView
+            android:id="@+id/chat_room_input_emoji"
+            android:src="@mipmap/chat_room_input_emoji"
+            android:padding="6dp"
+            android:layout_marginLeft="3dp"
+            android:layout_gravity="center_vertical"
+            android:layout_width="28dp"
+            android:layout_height="28dp" />
+
+        <EditText
+            android:hint="Type a Message"
+            android:textSize="14sp"
+            android:elevation="4dp"
+            android:layout_weight="1"
+            android:textColorHint="@color/chat_room_input_hint"
+            android:background="@color/chat_room_input_background"
+            android:singleLine="false"
+            android:paddingLeft="8dp"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" />
+
+        <ImageView
+            android:id="@+id/chat_room_input_send"
+            android:src="@mipmap/chat_room_input_send"
+            android:padding="10dp"
+            android:layout_width="56dp"
+            android:layout_height="42dp" />
+    </LinearLayout>
+
+</LinearLayout>

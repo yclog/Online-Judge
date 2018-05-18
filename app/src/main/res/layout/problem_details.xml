@@ -14,7 +14,6 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent">
 
-
             <TextView
                 android:id="@+id/problem_detail_title"
                 android:text="1.Two Sum"
@@ -58,7 +57,7 @@
                 android:layout_height="3dp"></ImageView>
 
             <TextView
-                android:id="@+id/problem_detail_content"
+                android:id="@+id/problem_detail_description"
                 android:textStyle="bold"
                 android:textColor="@color/problem_content_text"
                 android:text="@string/problem_content_sample"
@@ -134,7 +133,6 @@
 
                 <TextView
                     android:id="@+id/problem_detail_solution"
-                    android:text="@string/problem_solution_sample"
                     android:textColor="@color/problem_content_text"
                     android:paddingLeft="9dp"
                     android:paddingTop="8dp"

@@ -195,6 +195,12 @@
             <include layout="@layout/profile_connectus"></include>
 
             <include layout="@layout/profile_aboutus"></include>
+
+
+            <!--分割区-->
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="8dp"></View>
         </LinearLayout>
     </ScrollView>
 

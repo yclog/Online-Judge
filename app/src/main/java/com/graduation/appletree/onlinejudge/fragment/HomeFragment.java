@@ -9,8 +9,6 @@ import com.graduation.appletree.onlinejudge.R;
 import com.graduation.appletree.onlinejudge.activity.ProblemAlgorithmActivity;
 import com.graduation.appletree.onlinejudge.eventbus.EventCenter;
 
-import butterknife.BindView;
-
 public class HomeFragment extends BaseFragment implements View.OnClickListener{
 
     private final String TAG = this.getClass().getName();

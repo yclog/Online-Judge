@@ -21,7 +21,8 @@
             </intent-filter>
         </activity>
         <activity android:name=".activity.ProblemAlgorithmActivity"></activity>
-        <activity android:name=".activity.ProfileMessageActivty"></activity>
+        <activity android:name=".activity.ProfileMessageActivity"></activity>
+        <activity android:name=".activity.ProblemDetailsActivity"></activity>
     </application>
 
 </manifest>

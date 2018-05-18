@@ -49,14 +49,21 @@ public abstract class BaseFragment extends Fragment{
     }
 
     // Jump to Another Class with params
-    protected void readyGo(Class<?> targetClass,Bundle bundle){
+    protected void readyGo(Class<?> targetClass, Bundle bundle){
         Intent intent = new Intent(getContext(), targetClass);
         intent.putExtras(bundle);
         startActivity(intent);
     }
 
+    // Jump to Another Class with params
+    protected void readyGo(Class<?> targetClass, String key, String value){
+        Intent intent = new Intent(getContext(), targetClass);
+        intent.putExtra(key, value);
+        startActivity(intent);
+    }
+
     // Jump to Another Class with requestCode
-    protected void readyGoForResult(Class<?> targetClass,int requestCode){
+    protected void readyGoForResult(Class<?> targetClass, int requestCode){
         Intent intent = new Intent(getContext(), targetClass);
         startActivityForResult(intent, requestCode);
     }
