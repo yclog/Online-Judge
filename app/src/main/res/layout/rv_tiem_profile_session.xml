@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="36dp">
+
+    <TextView
+        android:id="@+id/rv_profile_session_title_num"
+        android:text="1"
+        android:textSize="14sp"
+        android:layout_weight="1"
+        android:paddingLeft="22dp"
+        android:layout_gravity="center_vertical"
+        android:textColor="@color/problem_menu_dark"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/rv_profile_session_title_mission"
+        android:text="任务一"
+        android:textSize="14sp"
+        android:layout_weight="1"
+        android:textColor="@color/profile_session_title"
+        android:layout_gravity="center_vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/rv_profile_session_title_publisher"
+        android:text="史老师"
+        android:textSize="14sp"
+        android:layout_weight="1"
+        android:textColor="@color/problem_menu_dark"
+        android:layout_gravity="center_vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/rv_profile_session_title_starttime"
+        android:text="2018/5/19"
+        android:textSize="14sp"
+        android:layout_weight="1"
+        android:textColor="@color/problem_menu_dark"
+        android:layout_gravity="center_vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/rv_profile_session_title_endtime"
+        android:text="2018/5/25"
+        android:textSize="14sp"
+        android:layout_weight="1"
+        android:paddingLeft="3dp"
+        android:textColor="@color/problem_menu_dark"
+        android:layout_gravity="center_vertical"
+        android:layout_width="70dp"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>

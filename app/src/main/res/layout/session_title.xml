@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="36dp">
+
+
+    <TextView
+        android:id="@+id/session_title_num"
+        android:text="#"
+        android:textStyle="bold"
+        android:textSize="14sp"
+        android:layout_weight="1"
+        android:paddingLeft="22dp"
+        android:layout_gravity="center_vertical"
+        android:textColor="@color/problem_menu_dark"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/session_title_mission"
+        android:text="Mission"
+        android:textSize="14sp"
+        android:layout_weight="1"
+        android:textColor="@color/problem_menu_dark"
+        android:layout_gravity="center_vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/session_title_publisher"
+        android:text="Publisher"
+        android:textSize="14sp"
+        android:layout_weight="1"
+        android:textColor="@color/problem_menu_dark"
+        android:layout_gravity="center_vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/session_title_starttime"
+        android:text="Start Time"
+        android:textSize="14sp"
+        android:layout_weight="1"
+        android:textColor="@color/problem_menu_dark"
+        android:layout_gravity="center_vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/session_title_endtime"
+        android:text="End Name"
+        android:textSize="14sp"
+        android:layout_weight="1"
+        android:paddingLeft="3dp"
+        android:textColor="@color/problem_menu_dark"
+        android:layout_gravity="center_vertical"
+        android:layout_width="70dp"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>

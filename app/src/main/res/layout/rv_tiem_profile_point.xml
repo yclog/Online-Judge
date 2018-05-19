@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/rv_profile_point_date"
+        android:text="Saturday, May 19, 2018, 3:44 PM"
+        android:textSize="11sp"
+        android:textColor="@color/profile_point_rv_text"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="4dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:background="@drawable/shadow_border"
+        android:elevation="2dp"
+        android:layout_margin="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:background="@color/profile_point_rv_left"
+            android:layout_margin="1.5px"
+            android:orientation="vertical"
+            android:layout_width="64dp"
+            android:layout_height="64dp">
+
+            <ImageView
+                android:src="@mipmap/coin"
+                android:padding="2dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="10dp"
+                android:layout_width="30dp"
+                android:layout_height="30dp" />
+
+            <TextView
+                android:text="+1"
+                android:textStyle="bold"
+                android:textColor="@color/profile_point_rv_coin_text"
+                android:layout_gravity="center_horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/rv_profile_point_title"
+                android:text="Mission"
+                android:textSize="11sp"
+                android:textColor="@color/profile_point_rv_light"
+                android:layout_marginLeft="12dp"
+                android:layout_marginTop="16dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/rv_profile_point_content"
+                android:text="Completed a daily check-in mission"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:textColor="@color/profile_point_rv_text"
+                android:layout_marginLeft="12dp"
+                android:layout_marginTop="1dp"
+                android:layout_gravity="center_vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

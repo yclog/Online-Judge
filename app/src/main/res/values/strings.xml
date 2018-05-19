@@ -9,6 +9,4 @@
     <string name="problem_example_sample">
         Given nums = [2, 7, 11, 15], target = 9\nBecause nums[0] + nums[1] = 2 + 7 = 9\nreturn [0, 1]
     </string>
-    <string name="problem_solution_sample">
-    </string>
 </resources>

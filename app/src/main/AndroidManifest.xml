@@ -21,10 +21,17 @@
             </intent-filter>
         </activity>
         <activity android:name=".activity.ProblemAlgorithmActivity"></activity>
-        <activity android:name=".activity.ProfileMessageActivity"></activity>
         <activity android:name=".activity.ProblemDetailsActivity"></activity>
+        <activity android:name=".activity.ProfileMessageActivity"></activity>
+        <activity android:name=".activity.ProfilePointActivity"></activity>
+        <activity android:name=".activity.ProfileProgressActivity"></activity>
         <activity android:name=".activity.ProfileSubmisisonActivity"></activity>
+        <activity android:name=".activity.ProfileSessionActivity"></activity>
+        <activity android:name=".activity.ProfileNoteBookActivity"></activity>
+        <activity android:name=".activity.ProfileMyListActivity"></activity>
         <activity android:name=".activity.ProfileConnectUsActivity"></activity>
+        <activity android:name=".activity.ProfileAboutUsActivity"></activity>
+        <activity android:name=".activity.ProfileSettingActivity"></activity>
     </application>
 
 </manifest>

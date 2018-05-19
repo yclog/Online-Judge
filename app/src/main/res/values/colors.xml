@@ -113,7 +113,19 @@
     <color name="profile_feedback_content">#333333</color>
     <color name="profile_feedback_button">#343e49</color>
 
-    <color name="loginout">#d85451</color>
+    <color name="profile_session_title">#33a3dd</color>
+
+    <color name="profile_point_rv_text">#373737</color>
+    <color name="profile_point_rv_coin_text">#fbbc05</color>
+    <color name="profile_point_rv_light">#808084</color>
+    <color name="profile_point_rv_left">#f1f0f1</color>
+    <color name="profile_point_rv_right">#ffffff</color>
+
+    <color name="profile_progress_accept">#449d44</color>
+    <color name="profile_progress_error">#f64845</color>
+    <color name="profile_progress_text">#000000</color>
+
+    <color name="logout">#d85451</color>
 
 
 </resources>

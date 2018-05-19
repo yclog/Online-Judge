@@ -1,24 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:id="@+id/profile_aboutus"
+    android:id="@+id/setting_changephone"
     android:orientation="vertical" android:layout_width="match_parent"
     android:background="@color/backgroundWhite"
     android:layout_height="48dp">
 
-    <ImageView
-        android:id="@+id/menu_icon"
-        android:src="@mipmap/about_us"
-        android:layout_width="22dp"
-        android:layout_height="22dp"
-        android:padding="1dp"
-        android:layout_marginLeft="28dp"
-        android:layout_centerVertical="true"/>
-
     <TextView
-        android:text="About us"
+        android:text="Change Phone"
         android:textSize="14sp"
         android:textColor="@color/profileLightText"
-        android:layout_marginLeft="8dp"
+        android:layout_marginLeft="18dp"
         android:layout_toRightOf="@+id/menu_icon"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -38,7 +29,7 @@
         android:background="@color/shadowGrey"
         android:layout_width="match_parent"
         android:layout_height="1px"
-        android:layout_marginLeft="28dp"
+        android:layout_marginLeft="18dp"
         android:layout_marginRight="18dp"
         android:layout_alignParentBottom="true"></View>
 

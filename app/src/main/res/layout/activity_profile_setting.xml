@@ -19,7 +19,7 @@
             android:layout_height="26dp" />
 
         <TextView
-            android:text="TALK TO US"
+            android:text="SETTING"
             android:textStyle="bold"
             android:textColor="@color/titlebarTextLight"
             android:letterSpacing="0.4"
@@ -28,44 +28,27 @@
             android:layout_height="wrap_content"/>
     </android.support.v7.widget.Toolbar>
 
-    <EditText
-        android:id="@+id/profile_connectus_advice"
-        android:textColor="@color/profile_feedback_content"
-        android:hint="@string/profile_connectus_advice_hint"
-        android:textColorHint="@color/profile_feedback_content_hint"
-        android:textSize="15sp"
-        android:gravity="top"
-        android:padding="4dp"
-        android:lineSpacingExtra="2dp"
-        android:inputType="textMultiLine"
-        android:lines="8"
-        android:background="@drawable/profile_connectus"
-        android:layout_gravity="center_horizontal"
-        android:layout_margin="12dp"
+    <!--分割区-->
+    <View
         android:layout_width="match_parent"
-        android:layout_height="160dp" />
-    
-    <EditText
-        android:id="@+id/profile_connectus_contact"
-        android:textSize="15sp"
-        android:textColor="@color/profile_feedback_content"
-        android:hint="@string/profile_connectus_contact_hint"
-        android:background="@drawable/profile_connectus"
-        android:layout_marginLeft="12dp"
-        android:layout_marginRight="12dp"
-        android:paddingLeft="10dp"
-        android:layout_width="match_parent"
-        android:layout_height="40dp" />
+        android:layout_height="4dp"></View>
+
+    <include layout="@layout/profile_setting_changephone"></include>
+
+    <include layout="@layout/profile_setting_changepwd"></include>
+
+    <include layout="@layout/profile_setting_common"></include>
+
+    <include layout="@layout/profile_setting_recevicemsg"></include>
 
     <Button
-        android:id="@+id/button_feedback_submit"
+        android:id="@+id/button_setting_logout"
         android:layout_width="match_parent"
         android:layout_height="42dp"
         android:layout_marginLeft="12dp"
         android:layout_marginRight="12dp"
-        android:layout_marginTop="10dp"
+        android:layout_marginTop="36dp"
         android:background="@drawable/common_button"
-        android:text="提交"
+        android:text="LOGOUT"
         android:textColor="@color/textWhite" />
-
 </LinearLayout>

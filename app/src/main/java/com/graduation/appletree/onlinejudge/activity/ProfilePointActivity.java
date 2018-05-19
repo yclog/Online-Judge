@@ -9,14 +9,13 @@ import com.graduation.appletree.onlinejudge.eventbus.EventCenter;
 
 import butterknife.BindView;
 
-public class ProblemAlgorithmActivity extends BaseActivity{
-
+public class ProfilePointActivity extends BaseActivity{
     @BindView(R.id.titlebar_back)
     protected ImageView titlebar_back;
 
     @Override
     protected int getContentViewLayoutID() {
-        return R.layout.activity_problem_algorithm;
+        return R.layout.activity_profile_point;
     }
 
     @Override
@@ -42,7 +41,7 @@ public class ProblemAlgorithmActivity extends BaseActivity{
         titlebar_back.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                ProblemAlgorithmActivity.this.finish();
+                ProfilePointActivity.this.finish();
             }
         });
     }

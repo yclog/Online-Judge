@@ -14,7 +14,7 @@
         android:layout_centerVertical="true"/>
 
     <TextView
-        android:text="talk to us"
+        android:text="Talk to us"
         android:textSize="14sp"
         android:textColor="@color/profileLightText"
         android:layout_marginLeft="8dp"
