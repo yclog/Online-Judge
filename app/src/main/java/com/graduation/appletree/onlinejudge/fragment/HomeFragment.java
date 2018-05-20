@@ -2,11 +2,13 @@ package com.graduation.appletree.onlinejudge.fragment;
 
 import android.util.Log;
 import android.view.View;
+import android.widget.LinearLayout;
 import android.widget.RelativeLayout;
 
 import com.bigkoo.convenientbanner.ConvenientBanner;
 import com.graduation.appletree.onlinejudge.R;
 import com.graduation.appletree.onlinejudge.activity.ProblemAlgorithmActivity;
+import com.graduation.appletree.onlinejudge.activity.RankActivity;
 import com.graduation.appletree.onlinejudge.eventbus.EventCenter;
 
 public class HomeFragment extends BaseFragment implements View.OnClickListener{
@@ -21,6 +23,8 @@ public class HomeFragment extends BaseFragment implements View.OnClickListener{
     protected RelativeLayout home_osystem;
     protected RelativeLayout home_database;
     protected RelativeLayout home_shell;
+
+    protected LinearLayout rank;
 
     @Override
     protected int getContentViewLayoutID() {
@@ -45,6 +49,10 @@ public class HomeFragment extends BaseFragment implements View.OnClickListener{
                 readyGo(ProblemAlgorithmActivity.class);
                 break;
             }
+            case R.id.rank:{
+                readyGo(RankActivity.class);
+                break;
+            }
             default:{
                 Log.d(TAG, "Invalid Click");
                 break;
@@ -67,5 +75,7 @@ public class HomeFragment extends BaseFragment implements View.OnClickListener{
         home_database.setOnClickListener(this);
         home_shell = getRootView().findViewById(R.id.home_shell);
         home_shell.setOnClickListener(this);
+        rank = getRootView().findViewById(R.id.rank);
+        rank.setOnClickListener(this);
     }
 }

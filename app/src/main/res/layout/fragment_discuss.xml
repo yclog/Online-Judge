@@ -21,7 +21,7 @@
     <include layout="@layout/fragment_discuss_category"></include>
 
     <android.support.v7.widget.RecyclerView
-        android:id="@+id/discuss_rv"
+        android:id="@+id/rv_discuss"
         android:layout_marginTop="6dp"
         android:layout_width="match_parent"
         android:layout_height="match_parent">

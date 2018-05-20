@@ -126,6 +126,10 @@
     <color name="profile_progress_text">#000000</color>
 
     <color name="logout">#d85451</color>
-
+    <color name="login_icon_background">#fbbc05</color>
+    <color name="login_text_hint">#b2b5ba</color>
+    <color name="login_text">#202b3a</color>s
+    <color name="login_button">#d8dadc</color>
+    <color name="login_button_active">#fbbc05</color>
 
 </resources>

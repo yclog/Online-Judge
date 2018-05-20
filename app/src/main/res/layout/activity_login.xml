@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.graduation.appletree.onlinejudge.view.CircleImageView
+        android:src="@color/login_icon_background"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="48dp"
+        android:layout_width="106dp"
+        android:layout_height="106dp" />
+
+    <ImageView
+        android:src="@mipmap/login_icon"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="70dp"
+        android:layout_width="56dp"
+        android:layout_height="56dp" />
+
+    <LinearLayout
+        android:layout_marginTop="220dp"
+        android:layout_centerHorizontal="true"
+        android:orientation="horizontal"
+        android:layout_width="260dp"
+        android:layout_height="42dp">
+
+        <ImageView
+            android:src="@mipmap/login_account"
+            android:layout_gravity="center_vertical"
+            android:padding="4dp"
+            android:layout_marginTop="2dp"
+            android:layout_width="26dp"
+            android:layout_height="26dp" />
+
+        <EditText
+            android:id="@+id/login_account"
+            android:textSize="13sp"
+            android:hint="Input your account"
+            android:background="@color/backgroundTotalWhite"
+            android:paddingLeft="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+
+    <View
+        android:layout_marginTop="262dp"
+        android:layout_centerHorizontal="true"
+        android:background="@color/shadowGrey"
+        android:layout_width="260dp"
+        android:layout_height="1dp" />
+
+    <LinearLayout
+        android:layout_marginTop="272dp"
+        android:layout_centerHorizontal="true"
+        android:orientation="horizontal"
+        android:layout_width="260dp"
+        android:layout_height="42dp">
+
+        <ImageView
+            android:src="@mipmap/login_password"
+            android:layout_gravity="center_vertical"
+            android:padding="6dp"
+            android:layout_marginTop="1dp"
+            android:layout_width="26dp"
+            android:layout_height="26dp" />
+
+        <EditText
+            android:id="@+id/login_password"
+            android:textSize="13sp"
+            android:hint="Password"
+            android:password="true"
+            android:background="@color/backgroundTotalWhite"
+            android:paddingLeft="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+
+    <View
+        android:layout_marginTop="314dp"
+        android:layout_centerHorizontal="true"
+        android:background="@color/shadowGrey"
+        android:layout_width="260dp"
+        android:layout_height="1dp" />
+
+    <ImageButton
+        android:id="@+id/login_button"
+        android:src="@mipmap/login_button_icon"
+        android:layout_marginTop="346dp"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/login_button"
+        android:layout_width="260dp"
+        android:layout_height="42dp" />
+
+    <TextView
+        android:id="@+id/login_forget"
+        android:textColor="@color/login_text_hint"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="10dp"
+        android:text="Forgot password?"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+</RelativeLayout>

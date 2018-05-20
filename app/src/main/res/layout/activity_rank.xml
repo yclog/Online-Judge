@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.v7.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:elevation="4dp"
+        android:background="@color/titlebarDark">
+
+        <ImageView
+            android:id="@+id/titlebar_back"
+            android:src="@mipmap/back"
+            android:padding="5dp"
+            android:layout_width="26dp"
+            android:layout_height="26dp" />
+
+        <TextView
+            android:text="RANK"
+            android:textStyle="bold"
+            android:textColor="@color/titlebarTextLight"
+            android:letterSpacing="0.4"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </android.support.v7.widget.Toolbar>
+
+    <!--分割区-->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="4dp"></View>
+
+    <View
+        android:background="@drawable/shadow_dash_line"
+        android:layout_width="match_parent"
+        android:layout_height="3dp"></View>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_rank"
+        android:layout_marginTop="3dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    </android.support.v7.widget.RecyclerView>
+
+</LinearLayout>

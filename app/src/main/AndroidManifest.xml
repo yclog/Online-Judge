@@ -32,6 +32,7 @@
         <activity android:name=".activity.ProfileConnectUsActivity"></activity>
         <activity android:name=".activity.ProfileAboutUsActivity"></activity>
         <activity android:name=".activity.ProfileSettingActivity"></activity>
+        <activity android:name=".activity.RankActivity"></activity>
     </application>
 
 </manifest>
