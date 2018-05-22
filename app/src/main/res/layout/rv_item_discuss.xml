@@ -30,6 +30,7 @@
             android:layout_centerVertical="true"/>
 
         <TextView
+            android:id="@+id/rv_discuss_post_title"
             android:text="Title"
             android:textSize="12sp"
             android:textColor="@color/textDarkPrimary"

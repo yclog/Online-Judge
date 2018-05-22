@@ -22,21 +22,32 @@
             android:layout_height="wrap_content"/>
     </android.support.v7.widget.Toolbar>
 
-    <!--首页推送滚动-->
-    <com.bigkoo.convenientbanner.ConvenientBanner
-        xmlns:app="http://schemas.android.com/apk/res-auto"
-        android:id="@+id/home_ad_vp"
+    <android.support.v4.widget.NestedScrollView
         android:layout_width="match_parent"
-        android:layout_height="140dp"
-        app:canLoop="true"
-    />
+        android:layout_height="wrap_content">
 
-    <!--首页Category-->
-    <include layout="@layout/fragment_home_category"></include>
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
 
-    <!--首页Rank-->
-    <include layout="@layout/fragment_home_rank"></include>
+            <!--首页推送滚动-->
+            <com.bigkoo.convenientbanner.ConvenientBanner
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/home_ad_vp"
+                android:layout_width="match_parent"
+                android:layout_height="140dp"
+                app:canLoop="true"
+                />
 
-    <!--首页展示Excellent solution-->
-    <include layout="@layout/fragment_home_solution"></include>
+            <!--首页Category-->
+            <include layout="@layout/fragment_home_category"></include>
+
+            <!--首页Rank-->
+            <include layout="@layout/fragment_home_rank"></include>
+
+            <!--首页展示Excellent solution-->
+            <include layout="@layout/fragment_home_solution"></include>
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
 </LinearLayout>

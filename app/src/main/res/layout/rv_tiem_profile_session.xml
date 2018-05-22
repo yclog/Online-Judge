@@ -6,7 +6,7 @@
     android:layout_height="36dp">
 
     <TextView
-        android:id="@+id/rv_profile_session_title_num"
+        android:id="@+id/rv_profile_session_num"
         android:text="1"
         android:textSize="14sp"
         android:layout_weight="1"
@@ -17,7 +17,7 @@
         android:layout_height="wrap_content" />
 
     <TextView
-        android:id="@+id/rv_profile_session_title_mission"
+        android:id="@+id/rv_profile_session_mission"
         android:text="任务一"
         android:textSize="14sp"
         android:layout_weight="1"
@@ -27,7 +27,7 @@
         android:layout_height="wrap_content" />
 
     <TextView
-        android:id="@+id/rv_profile_session_title_publisher"
+        android:id="@+id/rv_profile_session_publisher"
         android:text="史老师"
         android:textSize="14sp"
         android:layout_weight="1"
@@ -37,7 +37,7 @@
         android:layout_height="wrap_content" />
 
     <TextView
-        android:id="@+id/rv_profile_session_title_starttime"
+        android:id="@+id/rv_profile_session_starttime"
         android:text="2018/5/19"
         android:textSize="14sp"
         android:layout_weight="1"
@@ -47,7 +47,7 @@
         android:layout_height="wrap_content" />
 
     <TextView
-        android:id="@+id/rv_profile_session_title_endtime"
+        android:id="@+id/rv_profile_session_endtime"
         android:text="2018/5/25"
         android:textSize="14sp"
         android:layout_weight="1"

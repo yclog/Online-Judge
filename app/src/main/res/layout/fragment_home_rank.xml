@@ -18,9 +18,11 @@
             android:layout_height="wrap_content" />
     </LinearLayout>
 
+    <include layout="@layout/shadowline"></include>
+
     <android.support.v7.widget.RecyclerView
         android:id="@+id/rv_home_rank"
-        android:layout_height="wrap_content"
+        android:layout_height="match_parent"
         android:layout_width="wrap_content">
     </android.support.v7.widget.RecyclerView>
 

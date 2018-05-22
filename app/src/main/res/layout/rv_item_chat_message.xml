@@ -8,8 +8,10 @@
     <com.graduation.appletree.onlinejudge.view.CircleImageView
         android:id="@+id/chat_message_avatar"
         android:src="@drawable/hugh"
-        android:layout_width="40dp"
-        android:layout_height="40dp"
+        app:civ_border_width="1px"
+        app:civ_border_color="@color/circle_image_border_white"
+        android:layout_width="34dp"
+        android:layout_height="34dp"
         android:layout_marginLeft="18dp"
         android:layout_centerVertical="true" />
 

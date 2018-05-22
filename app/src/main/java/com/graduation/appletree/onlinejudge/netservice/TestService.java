@@ -12,7 +12,7 @@ import rx.Observable;
  * Created by luke on 2018/3/21.
  * 与RetroFit绑定接口
  */
-public interface SearchService {
+public interface TestService {
 
     @GET("README.md")
     Observable<Response<ResponseBody>> loadRxRepo();

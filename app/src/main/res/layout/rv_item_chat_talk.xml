@@ -1,65 +1,62 @@
 <?xml version="1.0" encoding="utf-8"?>
-<merge xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto">
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/chat_vp_background"
+    android:layout_width="match_parent"
+    android:layout_height="56dp">
 
-    <RelativeLayout
-        android:background="@color/chat_vp_background"
-        android:layout_width="match_parent"
-        android:layout_height="56dp">
+    <com.graduation.appletree.onlinejudge.view.CircleImageView
+        android:id="@+id/chat_talk_avatar"
+        android:src="@drawable/hugh"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        app:civ_border_width="1dp"
+        app:civ_border_color="@color/circle_image_border_white"
+        android:layout_marginLeft="18dp"
+        android:layout_centerVertical="true" />
 
-        <com.graduation.appletree.onlinejudge.view.CircleImageView
-            android:id="@+id/chat_talk_avatar"
-            android:src="@drawable/hugh"
-            android:layout_width="44dp"
-            android:layout_height="44dp"
-            app:civ_border_width="1dp"
-            app:civ_border_color="@color/circle_image_border_white"
-            android:layout_marginLeft="18dp"
-            android:layout_centerVertical="true" />
+    <com.graduation.appletree.onlinejudge.view.CircleImageView
+        android:id="@+id/chat_talk_status"
+        android:src="@color/chat_busy"
+        android:layout_width="9dp"
+        android:layout_height="9dp"
+        android:layout_marginLeft="44dp"
+        android:layout_marginTop="36dp"
+        app:civ_border_width="1dp"
+        app:civ_border_color="@color/circle_image_border_white" />
 
-        <com.graduation.appletree.onlinejudge.view.CircleImageView
-            android:id="@+id/chat_talk_status"
-            android:src="@color/chat_busy"
-            android:layout_width="9dp"
-            android:layout_height="9dp"
-            android:layout_marginLeft="52dp"
-            android:layout_marginTop="38dp"
-            app:civ_border_width="1dp"
-            app:civ_border_color="@color/circle_image_border_white" />
+    <TextView
+        android:id="@+id/chat_talk_name"
+        android:text="AppleTree"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        android:textColor="@color/chat_vp_name_text"
+        android:layout_marginLeft="13dp"
+        android:layout_marginTop="11dp"
+        android:layout_toRightOf="@+id/chat_talk_avatar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
 
-        <TextView
-            android:id="@+id/chat_talk_name"
-            android:text="AppleTree"
-            android:textSize="16sp"
-            android:textStyle="bold"
-            android:textColor="@color/chat_vp_name_text"
-            android:layout_marginLeft="14dp"
-            android:layout_marginTop="8dp"
-            android:layout_toRightOf="@+id/chat_talk_avatar"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"/>
+    <TextView
+        android:id="@+id/chat_talk_brief"
+        android:text="Amazing work ! Keep it up !"
+        android:textSize="12sp"
+        android:textColor="@color/chat_vp_brief_text"
+        android:layout_marginLeft="14dp"
+        android:layout_marginTop="30dp"
+        android:layout_toRightOf="@+id/chat_talk_avatar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
 
-        <TextView
-            android:id="@+id/chat_talk_brief"
-            android:text="Amazing work ! Keep it up !"
-            android:textSize="14sp"
-            android:textColor="@color/chat_vp_brief_text"
-            android:layout_marginLeft="14dp"
-            android:layout_marginTop="30dp"
-            android:layout_toRightOf="@+id/chat_talk_avatar"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"/>
+    <TextView
+        android:id="@+id/chat_talk_date"
+        android:text="12:06"
+        android:textSize="14sp"
+        android:textColor="@color/textDarkLight"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="12dp"
+        android:layout_centerVertical="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
 
-        <TextView
-            android:id="@+id/chat_talk_date"
-            android:text="12:06"
-            android:textSize="14sp"
-            android:textColor="@color/textDarkLight"
-            android:layout_alignParentRight="true"
-            android:layout_marginRight="12dp"
-            android:layout_centerVertical="true"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content" />
-    </RelativeLayout>
-
-</merge>
+</RelativeLayout>

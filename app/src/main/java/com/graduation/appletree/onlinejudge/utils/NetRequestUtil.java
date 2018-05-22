@@ -1,6 +1,6 @@
 package com.graduation.appletree.onlinejudge.utils;
 
-import com.graduation.appletree.onlinejudge.netservice.SearchService;
+import com.graduation.appletree.onlinejudge.netservice.TestService;
 
 import okhttp3.MediaType;
 import okhttp3.RequestBody;
@@ -22,7 +22,7 @@ import rx.schedulers.Schedulers;
 public class NetRequestUtil {
 
     private static NetRequestUtil NetRequestUtilInstance;
-    private SearchService searchService;
+    private TestService testService;
     private Retrofit mRetrofit;
     private String baseUrl = "https://github.com/yclog/Online-Judge/blob/master/";
 
@@ -50,7 +50,7 @@ public class NetRequestUtil {
      * */
     public void getTestMethod(String reqUrl,Subscriber<Response<ResponseBody>> subscriber){
         initRetrofit(baseUrl + reqUrl);
-        searchService.loadRxRepo()
+        testService.loadRxRepo()
                 .subscribeOn(Schedulers.io())
                 .observeOn(AndroidSchedulers.mainThread())
                 .subscribe(subscriber);
@@ -64,7 +64,7 @@ public class NetRequestUtil {
     public void postTestMethod(String reqUrl,String json,Subscriber<Response<ResponseBody>> subscriber){
         initRetrofit(baseUrl + reqUrl);
         RequestBody body = RequestBody.create(JSON, json);
-        searchService.postRxRepo(body)
+        testService.postRxRepo(body)
                 .subscribeOn(Schedulers.newThread())
                 .observeOn(AndroidSchedulers.mainThread())
                 .subscribe(subscriber);
@@ -80,6 +80,6 @@ public class NetRequestUtil {
                 .addConverterFactory(GsonConverterFactory.create())
                 .addCallAdapterFactory(RxJavaCallAdapterFactory.create())
                 .build();
-        searchService = mRetrofit.create(SearchService.class);
+        testService = mRetrofit.create(TestService.class);
     }
 }

@@ -29,9 +29,9 @@
     <color name="error">#d9534f</color>
     <color name="acceptRate">#5bc0de</color>
 
-    <color name="home_rank_no.1">#fea116</color>
-    <color name="home_rank_no.2">#ededed</color>
-    <color name="home_rank_no.3">#ecb185</color>
+    <color name="home_rank_no.1">#efd78a</color>
+    <color name="home_rank_no.2">#d4d4d4</color>
+    <color name="home_rank_no.3">#e9b392</color>
 
     <color name="rank_grade">#fea116</color>
 

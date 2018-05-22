@@ -1,5 +1,7 @@
 package com.graduation.appletree.onlinejudge.fragment;
 
+import android.support.v7.widget.LinearLayoutManager;
+import android.support.v7.widget.RecyclerView;
 import android.util.Log;
 import android.view.View;
 import android.widget.LinearLayout;
@@ -9,7 +11,14 @@ import com.bigkoo.convenientbanner.ConvenientBanner;
 import com.graduation.appletree.onlinejudge.R;
 import com.graduation.appletree.onlinejudge.activity.ProblemAlgorithmActivity;
 import com.graduation.appletree.onlinejudge.activity.RankActivity;
+import com.graduation.appletree.onlinejudge.adapter.RVHomeRankAdapter;
+import com.graduation.appletree.onlinejudge.adapter.RVHomeSolutionAdapter;
+import com.graduation.appletree.onlinejudge.bean.RVHomeRankData;
+import com.graduation.appletree.onlinejudge.bean.RVHomeSolutionData;
 import com.graduation.appletree.onlinejudge.eventbus.EventCenter;
+
+import java.util.ArrayList;
+import java.util.List;
 
 public class HomeFragment extends BaseFragment implements View.OnClickListener{
 
@@ -24,6 +33,8 @@ public class HomeFragment extends BaseFragment implements View.OnClickListener{
     protected RelativeLayout home_database;
     protected RelativeLayout home_shell;
 
+    protected RecyclerView rv_home_rank;
+    protected RecyclerView rv_home_solution;
     protected LinearLayout rank;
 
     @Override
@@ -35,6 +46,7 @@ public class HomeFragment extends BaseFragment implements View.OnClickListener{
     protected void initViewAndEvent() {
         initView();
         initAdViewPager();
+        initRecoView();
     }
 
     @Override
@@ -75,7 +87,63 @@ public class HomeFragment extends BaseFragment implements View.OnClickListener{
         home_database.setOnClickListener(this);
         home_shell = getRootView().findViewById(R.id.home_shell);
         home_shell.setOnClickListener(this);
+        rv_home_rank = getRootView().findViewById(R.id.rv_home_rank);
+        rv_home_solution = getRootView().findViewById(R.id.rv_home_solution);
         rank = getRootView().findViewById(R.id.rank);
         rank.setOnClickListener(this);
+    }
+
+    private void initRecoView(){
+        //Home Rank RecyclerView
+        RVHomeRankAdapter mRVHomeRankAdapter = new RVHomeRankAdapter(getContext(), getHomeRankList());
+        rv_home_rank.setLayoutManager(new LinearLayoutManager(getContext()));
+        rv_home_rank.setAdapter(mRVHomeRankAdapter);
+        //Home Solution RecyclerView
+        RVHomeSolutionAdapter mRVHomeSolutionAdapter = new RVHomeSolutionAdapter(getContext(),getHomeSolutionList());
+        rv_home_solution.setLayoutManager(new LinearLayoutManager(getContext()));
+        rv_home_solution.setAdapter(mRVHomeSolutionAdapter);
+    }
+
+    private List<RVHomeRankData> getHomeRankList(){
+        List<RVHomeRankData> mDataList = new ArrayList<>();
+        RVHomeRankData test = new RVHomeRankData();
+        test.setHome_rank_avatar(R.drawable.hugh);
+        test.setHome_rank_name("No.1");
+        test.setHome_rank_num(1);
+        mDataList.add(test);
+        RVHomeRankData test2 = new RVHomeRankData();
+        test2.setHome_rank_avatar(R.drawable.hugh);
+        test2.setHome_rank_name("No.2");
+        test2.setHome_rank_num(2);
+        mDataList.add(test2);
+        RVHomeRankData test3 = new RVHomeRankData();
+        test3.setHome_rank_avatar(R.drawable.hugh);
+        test3.setHome_rank_name("No.3");
+        test3.setHome_rank_num(3);
+        mDataList.add(test3);
+        return mDataList;
+    }
+
+    private List<RVHomeSolutionData> getHomeSolutionList(){
+        List<RVHomeSolutionData> mDataList = new ArrayList<>();
+        RVHomeSolutionData test = new RVHomeSolutionData();
+        test.setHome_solution_avatar(R.drawable.hugh);
+        test.setHome_solution_nickname("deerlog");
+        test.setHome_solution_title("make test");
+        test.setHome_solution_biref("test brief");
+        mDataList.add(test);
+        RVHomeSolutionData test1 = new RVHomeSolutionData();
+        test1.setHome_solution_avatar(R.drawable.hugh);
+        test1.setHome_solution_nickname("deerlog");
+        test1.setHome_solution_title("make test");
+        test1.setHome_solution_biref("test brief");
+        mDataList.add(test1);
+        RVHomeSolutionData test2 = new RVHomeSolutionData();
+        test2.setHome_solution_avatar(R.drawable.hugh);
+        test2.setHome_solution_nickname("deerlog");
+        test2.setHome_solution_title("make test");
+        test2.setHome_solution_biref("test brief");
+        mDataList.add(test2);
+        return mDataList;
     }
 }
