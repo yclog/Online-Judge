@@ -151,11 +151,10 @@
             </RelativeLayout>
 
             <Button
-                android:id="@+id/problem_detail_begin"
                 android:text="C++"
                 android:elevation="2dp"
                 android:textColor="@color/white"
-                android:background="@drawable/begin_code_button"
+                android:background="@drawable/problem_detail_language"
                 android:textSize="11sp"
                 android:layout_marginTop="16dp"
                 android:layout_gravity="left"
@@ -183,10 +182,25 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
 
+                <TextView
+                    android:id="@+id/problem_detail_result"
+                    android:hint="Result"
+                    android:paddingLeft="8dp"
+                    android:paddingRight="8dp"
+                    android:paddingTop="4dp"
+                    android:paddingBottom="4dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="17dp"
+                    android:layout_marginTop="4dp"
+                    android:background="@drawable/problem_shadow_border"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
                 <com.andexert.library.RippleView
                     android:id="@+id/problem_code_submit_ripp"
                     android:textSize="11sp"
                     app:rv_framerate="90"
+                    app:rv_centered="true"
                     android:layout_marginTop="6dp"
                     android:layout_alignParentRight="true"
                     android:layout_marginRight="17dp"
@@ -197,6 +211,7 @@
                         android:id="@+id/problem_code_submit"
                         android:text="提交"
                         android:elevation="2dp"
+                        android:textSize="11sp"
                         android:textColor="@color/white"
                         android:background="@drawable/submit_code_button"
                         android:textAllCaps="false"
@@ -205,9 +220,9 @@
                 </com.andexert.library.RippleView>
 
                 <com.andexert.library.RippleView
-                    rv_centered="true"
                     android:layout_marginTop="6dp"
                     app:rv_framerate="90"
+                    app:rv_centered="true"
                     android:layout_toLeftOf="@id/problem_code_submit_ripp"
                     android:layout_marginRight="10dp"
                     android:layout_width="wrap_content"

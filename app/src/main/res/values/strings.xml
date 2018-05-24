@@ -3,6 +3,16 @@
     <string name="profile_connectus_advice_hint">Please let us know what you want to improve this product</string>
     <string name="profile_connectus_contact_hint">Phone/QQ/Email</string>
 
+    <string name="problem_title_sample_zero">
+        1+1
+    </string>
+    <string name="problem_content_sample_zero">
+        Given two int variable and ask it's sum
+    </string>
+    <string name="problem_example_sample_zero">
+        Given nums1 = 2, nums2 = 1, target = 3\nBecause nums1 + nums2 = 2 + 1 = 3\nreturn 3
+    </string>
+
     <string name="problem_title_sample_one">
         Two Sum
     </string>

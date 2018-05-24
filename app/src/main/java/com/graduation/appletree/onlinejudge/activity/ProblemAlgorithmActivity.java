@@ -74,6 +74,7 @@ public class ProblemAlgorithmActivity extends BaseActivity{
 
     private List<RVProblemData> getDataList(){
         List<RVProblemData> mDataList = new ArrayList<>();
+        mDataList.add(new RVProblemData(-1, 0, 0, "1+1", "100%", 0));
         mDataList.add(new RVProblemData(0, 0, 1, "Two Sum", "32%", 2));
         mDataList.add(new RVProblemData(1, 1, 2, "Add Two Numbers", "33%", 0));
         mDataList.add(new RVProblemData(2, 2, 3, "Reverse Integer", "52%", 0));

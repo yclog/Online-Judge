@@ -94,6 +94,12 @@ public class ProblemDetailsActivity extends BaseActivity{
     private void loadContent(){
         Bundle bundle = getIntent().getExtras();
         switch (bundle.getInt("id")){
+            case -1:{
+                problem_detail_title.setText(R.string.problem_title_sample_zero);
+                problem_detail_description.setText(R.string.problem_content_sample_zero);
+                problem_detail_example.setText(R.string.problem_example_sample_zero);
+                break;
+            }
             case 0:{
                 problem_detail_title.setText(R.string.problem_title_sample_one);
                 problem_detail_description.setText(R.string.problem_content_sample_one);
