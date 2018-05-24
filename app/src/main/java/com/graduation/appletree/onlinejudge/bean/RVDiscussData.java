@@ -7,6 +7,8 @@ public class RVDiscussData {
     private String discuss_title;
     private String discuss_biref;
 
+    public RVDiscussData() {}
+
     public RVDiscussData(int discuss_avatar, String discuss_nickname, String discuss_title, String discuss_biref) {
         this.discuss_avatar = discuss_avatar;
         this.discuss_nickname = discuss_nickname;

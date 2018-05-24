@@ -43,12 +43,12 @@
         android:gravity="end"
         android:orientation="horizontal"
         android:layout_width="match_parent"
-        android:layout_height="42dp">
+        android:layout_height="52dp">
 
         <ImageView
             android:id="@+id/chat_room_input_add"
             android:src="@mipmap/chat_room_input_add"
-            android:padding="7dp"
+            android:padding="6dp"
             android:layout_gravity="center_vertical"
             android:layout_marginLeft="4dp"
             android:layout_width="28dp"
@@ -57,7 +57,7 @@
         <ImageView
             android:id="@+id/chat_room_input_emoji"
             android:src="@mipmap/chat_room_input_emoji"
-            android:padding="6dp"
+            android:padding="5dp"
             android:layout_marginLeft="3dp"
             android:layout_gravity="center_vertical"
             android:layout_width="28dp"
@@ -80,6 +80,7 @@
         <ImageView
             android:id="@+id/chat_room_input_send"
             android:src="@mipmap/chat_room_input_send"
+            android:layout_marginTop="5dp"
             android:padding="10dp"
             android:layout_width="52dp"
             android:layout_height="42dp" />

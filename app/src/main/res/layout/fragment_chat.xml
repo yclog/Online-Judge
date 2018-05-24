@@ -18,7 +18,7 @@
 
             <com.graduation.appletree.onlinejudge.view.CircleImageView
                 android:id="@+id/chat_avatar"
-                android:src="@drawable/hugh"
+                android:src="@drawable/avatar_one"
                 android:layout_marginLeft="8dp"
                 app:civ_border_width="1px"
                 app:civ_border_color="@color/circle_image_border_white"

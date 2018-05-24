@@ -3,7 +3,7 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="horizontal"
     android:layout_width="match_parent"
-    android:layout_height="36dp">
+    android:layout_height="38dp">
 
     <TextView
         android:id="@+id/rv_profile_session_num"
@@ -19,7 +19,7 @@
     <TextView
         android:id="@+id/rv_profile_session_mission"
         android:text="任务一"
-        android:textSize="14sp"
+        android:textSize="13sp"
         android:layout_weight="1"
         android:textColor="@color/profile_session_title"
         android:layout_gravity="center_vertical"
@@ -29,7 +29,7 @@
     <TextView
         android:id="@+id/rv_profile_session_publisher"
         android:text="史老师"
-        android:textSize="14sp"
+        android:textSize="13sp"
         android:layout_weight="1"
         android:textColor="@color/problem_menu_dark"
         android:layout_gravity="center_vertical"
@@ -39,7 +39,7 @@
     <TextView
         android:id="@+id/rv_profile_session_starttime"
         android:text="2018/5/19"
-        android:textSize="14sp"
+        android:textSize="13sp"
         android:layout_weight="1"
         android:textColor="@color/problem_menu_dark"
         android:layout_gravity="center_vertical"
@@ -49,7 +49,7 @@
     <TextView
         android:id="@+id/rv_profile_session_endtime"
         android:text="2018/5/25"
-        android:textSize="14sp"
+        android:textSize="13sp"
         android:layout_weight="1"
         android:paddingLeft="3dp"
         android:textColor="@color/problem_menu_dark"

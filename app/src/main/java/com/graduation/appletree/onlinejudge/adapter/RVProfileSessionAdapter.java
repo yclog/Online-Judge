@@ -37,7 +37,7 @@ public class RVProfileSessionAdapter extends Adapter<RVHolder>{
 
     @Override
     public void onBindViewHolder(RVHolder holder, int position) {
-        holder.rv_profile_session_num.setText(mDataList.get(position).getRv_profile_session_num());
+        holder.rv_profile_session_num.setText(mDataList.get(position).getRv_profile_session_num() + "");
         holder.rv_profile_session_mission.setText(mDataList.get(position).getRv_profile_session_mission());
         holder.rv_profile_session_publisher.setText(mDataList.get(position).getRv_profile_session_publisher());
         holder.rv_profile_session_starttime.setText(mDataList.get(position).getRv_profile_session_starttime());

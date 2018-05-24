@@ -65,6 +65,12 @@ public class ProfileSubmisisonActivity extends BaseActivity{
 
     private List<RVProfileSubmissionData> getDataList(){
         List<RVProfileSubmissionData> mDataList = new ArrayList<>();
+        mDataList.add(new RVProfileSubmissionData("Two Sum", "Accepted", "10ms", "java"));
+        mDataList.add(new RVProfileSubmissionData("Two Sum", "Runtime Error", "N/A", "java"));
+        mDataList.add(new RVProfileSubmissionData("Two Sum", "Runtime Error", "N/A", "java"));
+        mDataList.add(new RVProfileSubmissionData("Add Two Numbers", "Accepted", "24ms", "java"));
+        mDataList.add(new RVProfileSubmissionData("Add Two Numbers", "Runtime Error", "N/A", "java"));
+        mDataList.add(new RVProfileSubmissionData("Add Two Numbers", "Runtime Error", "N/A", "java"));
         return mDataList;
     }
 }

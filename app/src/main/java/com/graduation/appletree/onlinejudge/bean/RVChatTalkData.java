@@ -2,6 +2,7 @@ package com.graduation.appletree.onlinejudge.bean;
 
 public class RVChatTalkData {
 
+    private int chat_talk_id;
     private int chat_talk_avatar;
     private int chat_talk_status;
     private String chat_talk_name;
@@ -13,12 +14,21 @@ public class RVChatTalkData {
      * Busy : 1
      * OffLine : 2
      * */
-    public RVChatTalkData(int chat_talk_avatar, int chat_talk_status, String chat_talk_name, String chat_talk_brief, String chat_talk_date) {
+    public RVChatTalkData(int chat_talk_id, int chat_talk_avatar, int chat_talk_status, String chat_talk_name, String chat_talk_brief, String chat_talk_date) {
+        this.chat_talk_id = chat_talk_id;
         this.chat_talk_avatar = chat_talk_avatar;
         this.chat_talk_status = chat_talk_status;
         this.chat_talk_name = chat_talk_name;
         this.chat_talk_brief = chat_talk_brief;
         this.chat_talk_date = chat_talk_date;
+    }
+
+    public int getChat_talk_id() {
+        return chat_talk_id;
+    }
+
+    public void setChat_talk_id(int chat_talk_id) {
+        this.chat_talk_id = chat_talk_id;
     }
 
     public int getChat_talk_avatar() {

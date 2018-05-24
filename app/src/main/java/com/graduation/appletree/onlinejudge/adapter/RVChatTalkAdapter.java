@@ -31,6 +31,16 @@ public class RVChatTalkAdapter extends Adapter<RVHolder>{
         this.mContext = mContext;
     }
 
+    public static interface OnRecyclerViewItemClickListener {
+        void onItemClick(View view , String talk_name);
+    }
+
+    private RVChatTalkAdapter.OnRecyclerViewItemClickListener mOnItemClickListener = null;
+
+    public void setOnItemClickListener(RVChatTalkAdapter.OnRecyclerViewItemClickListener listener) {
+        this.mOnItemClickListener = listener;
+    }
+
     @Override
     public RVHolder onCreateViewHolder(ViewGroup parent, int viewType) {
         RVHolder holder = new RVHolder(mLayoutInflater.inflate(R.layout.rv_item_chat_talk, parent, false));
@@ -38,7 +48,7 @@ public class RVChatTalkAdapter extends Adapter<RVHolder>{
     }
 
     @Override
-    public void onBindViewHolder(RVHolder holder, int position) {
+    public void onBindViewHolder(RVHolder holder, final int position) {
         switch (mDataList.get(position).getChat_talk_status()){
             case 0:{
                 holder.chat_talk_status.setImageResource(R.color.chat_online);
@@ -60,6 +70,13 @@ public class RVChatTalkAdapter extends Adapter<RVHolder>{
         holder.chat_talk_name.setText(mDataList.get(position).getChat_talk_name());
         holder.chat_talk_brief.setText(mDataList.get(position).getChat_talk_brief());
         holder.chat_talk_date.setText(mDataList.get(position).getChat_talk_date());
+
+        holder.itemView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                mOnItemClickListener.onItemClick(view, mDataList.get(position).getChat_talk_name());
+            }
+        });
     }
 
     @Override

@@ -10,7 +10,7 @@ import android.widget.TextView;
 
 import com.graduation.appletree.onlinejudge.R;
 import com.graduation.appletree.onlinejudge.adapter.RVProfileMessageAdapter.RVHolder;
-import com.graduation.appletree.onlinejudge.bean.RVProfileMessage;
+import com.graduation.appletree.onlinejudge.bean.RVProfileMessageData;
 import com.graduation.appletree.onlinejudge.view.CircleImageView;
 
 import java.util.List;
@@ -20,10 +20,10 @@ public class RVProfileMessageAdapter extends Adapter<RVHolder>{
     private final String TAG = this.getClass().getName();
 
     private LayoutInflater mLayoutInflater;
-    private List<RVProfileMessage> mDataList;
+    private List<RVProfileMessageData> mDataList;
     private Context mContext;
 
-    public RVProfileMessageAdapter(Context mContext, List<RVProfileMessage> mDataList) {
+    public RVProfileMessageAdapter(Context mContext, List<RVProfileMessageData> mDataList) {
         this.mLayoutInflater = LayoutInflater.from(mContext);
         this.mDataList = mDataList;
         this.mContext = mContext;

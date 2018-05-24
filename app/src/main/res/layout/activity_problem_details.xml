@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
@@ -11,6 +11,8 @@
 
         <LinearLayout
             android:orientation="vertical"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
             android:layout_width="match_parent"
             android:layout_height="match_parent">
 
@@ -60,7 +62,7 @@
                 android:id="@+id/problem_detail_description"
                 android:textStyle="bold"
                 android:textColor="@color/problem_content_text"
-                android:text="@string/problem_content_sample"
+                android:text="@string/problem_content_sample_one"
                 android:lineSpacingExtra="4dp"
                 android:layout_marginTop="8dp"
                 android:layout_marginLeft="18dp"
@@ -73,7 +75,7 @@
                 android:textSize="16sp"
                 android:textStyle="italic"
                 android:textColor="@color/problem_title_text"
-                android:layout_marginLeft="18dp"
+                android:layout_marginLeft="18.5dp"
                 android:layout_marginTop="12dp"
                 android:layout_centerVertical="true"
                 android:layout_width="match_parent"
@@ -89,7 +91,7 @@
 
                 <TextView
                     android:id="@+id/problem_detail_example"
-                    android:text="@string/problem_example_sample"
+                    android:text="@string/problem_example_sample_one"
                     android:textColor="@color/problem_content_text"
                     android:paddingLeft="9dp"
                     android:paddingTop="8dp"
@@ -101,6 +103,8 @@
             </RelativeLayout>
 
             <RelativeLayout
+                android:id="@+id/problem_detail_solution_title"
+                android:visibility="gone"
                 android:layout_marginTop="8dp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
@@ -124,6 +128,8 @@
             </RelativeLayout>
 
             <RelativeLayout
+                android:id="@+id/problem_detail_solution"
+                android:visibility="gone"
                 android:background="@drawable/problem_shadow_border"
                 android:layout_marginLeft="17dp"
                 android:layout_marginRight="17dp"
@@ -132,7 +138,8 @@
                 android:layout_height="wrap_content">
 
                 <TextView
-                    android:id="@+id/problem_detail_solution"
+                    android:id="@+id/problem_detail_solution_mk"
+                    android:textSize="12sp"
                     android:textColor="@color/problem_content_text"
                     android:paddingLeft="9dp"
                     android:paddingTop="8dp"
@@ -141,6 +148,83 @@
                     android:singleLine="false"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content" />
+            </RelativeLayout>
+
+            <Button
+                android:id="@+id/problem_detail_begin"
+                android:text="C++"
+                android:elevation="2dp"
+                android:textColor="@color/white"
+                android:background="@drawable/begin_code_button"
+                android:textSize="11sp"
+                android:layout_marginTop="16dp"
+                android:layout_gravity="left"
+                android:layout_marginLeft="17dp"
+                android:textAllCaps="false"
+                android:layout_width="72dp"
+                android:layout_height="26dp" />
+
+            <EditText
+                android:id="@+id/problem_detail_code"
+                android:background="@drawable/code_background"
+                android:paddingLeft="6dp"
+                android:textSize="14sp"
+                android:textColor="@color/textWhite"
+                android:gravity="top"
+                android:paddingTop="6dp"
+                android:layout_marginLeft="17dp"
+                android:layout_marginRight="17dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="8dp"
+                android:layout_width="match_parent"
+                android:layout_height="240dp" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.andexert.library.RippleView
+                    android:id="@+id/problem_code_submit_ripp"
+                    android:textSize="11sp"
+                    app:rv_framerate="90"
+                    android:layout_marginTop="6dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="17dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <Button
+                        android:id="@+id/problem_code_submit"
+                        android:text="提交"
+                        android:elevation="2dp"
+                        android:textColor="@color/white"
+                        android:background="@drawable/submit_code_button"
+                        android:textAllCaps="false"
+                        android:layout_width="72dp"
+                        android:layout_height="26dp" />
+                </com.andexert.library.RippleView>
+
+                <com.andexert.library.RippleView
+                    rv_centered="true"
+                    android:layout_marginTop="6dp"
+                    app:rv_framerate="90"
+                    android:layout_toLeftOf="@id/problem_code_submit_ripp"
+                    android:layout_marginRight="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <Button
+                        android:id="@+id/problem_code_test"
+                        android:text="测试"
+                        android:elevation="2dp"
+                        android:textColor="@color/white"
+                        android:background="@drawable/test_code_button"
+                        android:textSize="11sp"
+                        android:textAllCaps="false"
+                        android:layout_width="72dp"
+                        android:layout_height="26dp" />
+                </com.andexert.library.RippleView>
+
             </RelativeLayout>
 
         </LinearLayout>

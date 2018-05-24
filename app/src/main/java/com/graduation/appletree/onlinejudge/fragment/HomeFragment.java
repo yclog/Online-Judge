@@ -151,18 +151,18 @@ public class HomeFragment extends BaseFragment implements View.OnClickListener,O
     private List<RVHomeRankData> getHomeRankList(){
         List<RVHomeRankData> mDataList = new ArrayList<>();
         RVHomeRankData test = new RVHomeRankData();
-        test.setHome_rank_avatar(R.drawable.hugh);
-        test.setHome_rank_name("No.1");
+        test.setHome_rank_avatar(R.drawable.avatar_one);
+        test.setHome_rank_name("AppleTree");
         test.setHome_rank_num(1);
         mDataList.add(test);
         RVHomeRankData test2 = new RVHomeRankData();
-        test2.setHome_rank_avatar(R.drawable.hugh);
-        test2.setHome_rank_name("No.2");
+        test2.setHome_rank_avatar(R.drawable.avatar_two);
+        test2.setHome_rank_name("Deerlog");
         test2.setHome_rank_num(2);
         mDataList.add(test2);
         RVHomeRankData test3 = new RVHomeRankData();
-        test3.setHome_rank_avatar(R.drawable.hugh);
-        test3.setHome_rank_name("No.3");
+        test3.setHome_rank_avatar(R.drawable.avatar_three);
+        test3.setHome_rank_name("Lucas");
         test3.setHome_rank_num(3);
         mDataList.add(test3);
         return mDataList;
@@ -171,22 +171,29 @@ public class HomeFragment extends BaseFragment implements View.OnClickListener,O
     private List<RVHomeSolutionData> getHomeSolutionList(){
         List<RVHomeSolutionData> mDataList = new ArrayList<>();
         RVHomeSolutionData test = new RVHomeSolutionData();
-        test.setHome_solution_avatar(R.drawable.hugh);
-        test.setHome_solution_nickname("deerlog");
-        test.setHome_solution_title("make test");
-        test.setHome_solution_biref("test brief");
+        test.setHome_solution_avatar(R.drawable.avatar_nine);
+        test.setHome_solution_nickname("金朝麟");
+        test.setHome_solution_title("Solution to problem one");
+        test.setHome_solution_biref("The brute force approach is simple. Loop through each element xx and find if there is another value that equals to target - xtarget−x.");
         mDataList.add(test);
         RVHomeSolutionData test1 = new RVHomeSolutionData();
-        test1.setHome_solution_avatar(R.drawable.hugh);
+        test1.setHome_solution_avatar(R.drawable.avatar_two);
         test1.setHome_solution_nickname("deerlog");
-        test1.setHome_solution_title("make test");
-        test1.setHome_solution_biref("test brief");
+        test1.setHome_solution_title("use python to solve problem one");
+        test1.setHome_solution_biref("python, how to analyze its time complexity");
         mDataList.add(test1);
         RVHomeSolutionData test2 = new RVHomeSolutionData();
-        test2.setHome_solution_avatar(R.drawable.hugh);
-        test2.setHome_solution_nickname("deerlog");
-        test2.setHome_solution_title("make test");
-        test2.setHome_solution_biref("test brief");
+        test2.setHome_solution_avatar(R.drawable.avatar_six);
+        test2.setHome_solution_nickname("付健");
+        test2.setHome_solution_title("如何高效分析时间复杂度");
+        test2.setHome_solution_biref("关键概念\n" +
+                "　　要分析算法的复杂度,通常需要分析循环的运行.\n" +
+                "一,假如,某个循环体的复杂度是O(1),那么这个循环的时间复杂度就是O(n).\n" +
+                "　　for(int i = 0; i < n; i++){\n" +
+                "　　　　//一些列复杂度为O(1)的步骤....\n" +
+                "　　}\n" +
+                "通常,如果某个循环结构以线性方式运行n次,并且循环体的时间复杂度都是O(1),那么该循环的复杂度就是O(n).\n" +
+                "即使,该循环跳过某些常数部分,只要跳过的部分是线性的,那么该循环体的时间复杂度仍就是O(n).");
         mDataList.add(test2);
         return mDataList;
     }

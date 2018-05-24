@@ -96,6 +96,14 @@ public class RVProblemAdapter extends Adapter<RVHolder>{
                 Log.d(TAG, "Problem Difficulty Status Invalid ");
             }
         }
+        holder.problem_solution.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(mContext,ProblemDetailsActivity.class);
+                intent.putExtra("isSolution",false);
+                mContext.startActivity(intent);
+            }
+        });
         holder.itemView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -114,6 +122,7 @@ public class RVProblemAdapter extends Adapter<RVHolder>{
         ImageView problem_accept;
         TextView problem_num;
         TextView problem_title;
+        ImageView problem_solution;
         TextView problem_rate;
         TextView problem_difficulty;
 
@@ -123,6 +132,7 @@ public class RVProblemAdapter extends Adapter<RVHolder>{
             problem_accept = itemView.findViewById(R.id.rv_problem_accept);
             problem_num = itemView.findViewById(R.id.rv_problem_num);
             problem_title = itemView.findViewById(R.id.rv_problem_title);
+            problem_solution = itemView.findViewById(R.id.rv_problem_solution);
             problem_rate = itemView.findViewById(R.id.rv_problem_rate);
             problem_difficulty = itemView.findViewById(R.id.rv_problem_difficulty);
         }

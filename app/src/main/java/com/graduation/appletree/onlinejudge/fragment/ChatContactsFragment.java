@@ -51,10 +51,12 @@ public class ChatContactsFragment extends BaseFragment{
 
     private List<RVChatContactData> getDataList(){
         List<RVChatContactData> mDataList = new ArrayList<>();
-        mDataList.add(new RVChatContactData(R.drawable.hugh,"1"));
-        mDataList.add(new RVChatContactData(R.drawable.hugh,"2"));
-        mDataList.add(new RVChatContactData(R.drawable.hugh,"3"));
-        mDataList.add(new RVChatContactData(R.drawable.hugh,"4"));
+        mDataList.add(new RVChatContactData(R.drawable.avatar_two,"Deerlog"));
+        mDataList.add(new RVChatContactData(R.drawable.avatar_six,"SpritCan"));
+        mDataList.add(new RVChatContactData(R.drawable.avatar_nine,"金朝麟"));
+        mDataList.add(new RVChatContactData(R.drawable.avatar_five,"付健"));
+        mDataList.add(new RVChatContactData(R.drawable.avatar_eight,"沙瑞金"));
+        mDataList.add(new RVChatContactData(R.drawable.avatar_four,"张平"));
         return mDataList;
     }
 }

@@ -1,6 +1,7 @@
 package com.graduation.appletree.onlinejudge.activity;
 
 import android.content.Context;
+import android.support.v7.widget.DividerItemDecoration;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.view.View;
@@ -59,11 +60,18 @@ public class ProfileSessionActivity extends BaseActivity{
     private void initRecoView(){
         RVProfileSessionAdapter mRVProfileSessionAdapter = new RVProfileSessionAdapter(getContext(),getDataList());
         rv_profile_session.setLayoutManager(new LinearLayoutManager(getContext()));
+        rv_profile_session.addItemDecoration(new DividerItemDecoration(getContext(), LinearLayoutManager.VERTICAL));
         rv_profile_session.setAdapter(mRVProfileSessionAdapter);
     }
 
     private List<RVProfileSessionData> getDataList(){
         List<RVProfileSessionData> mDataList = new ArrayList<>();
+        mDataList.add(new RVProfileSessionData(1,"完成前三题",
+                "李老师","2018/5/19","2018/5/25"));
+        mDataList.add(new RVProfileSessionData(2,"分析官方solution",
+                "李老师","2018/5/25","2018/5/26"));
+        mDataList.add(new RVProfileSessionData(3,"完成总结",
+                "李老师","2018/5/26","2018/5/27"));
         return mDataList;
     }
 }

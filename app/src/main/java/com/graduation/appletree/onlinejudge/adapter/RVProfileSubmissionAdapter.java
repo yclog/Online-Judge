@@ -38,6 +38,8 @@ public class RVProfileSubmissionAdapter extends Adapter<RVHolder>{
     public void onBindViewHolder(RVHolder holder, int position) {
         holder.submission_question.setText(mDataList.get(position).getSubmission_question());
         holder.submission_status.setText(mDataList.get(position).getSubmission_status());
+        if (mDataList.get(position).getSubmission_status().contains("Error"))
+            holder.submission_status.setTextColor(mContext.getResources().getColor(R.color.error));
         holder.submission_runtime.setText(mDataList.get(position).getSubmission_runtime());
         holder.submission_language.setText(mDataList.get(position).getSubmission_language());
     }

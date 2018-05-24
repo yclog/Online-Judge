@@ -8,7 +8,7 @@
     <ImageView
         android:id="@+id/rv_problem_attempted"
         android:padding="13dp"
-        android:layout_marginLeft="8dp"
+        android:layout_marginLeft="4dp"
         android:visibility="invisible"
         android:src="@mipmap/problem_attempted"
         android:layout_width="36dp"
@@ -17,7 +17,7 @@
     <ImageView
         android:id="@+id/rv_problem_accept"
         android:padding="11dp"
-        android:layout_marginLeft="8dp"
+        android:layout_marginLeft="4dp"
         android:visibility="visible"
         android:src="@mipmap/problem_accept"
         android:layout_width="36dp"
@@ -29,7 +29,7 @@
         android:textSize="14sp"
         android:textColor="@color/problem_num"
         android:layout_toRightOf="@id/rv_problem_attempted"
-        android:layout_marginLeft="16dp"
+        android:layout_marginLeft="1dp"
         android:layout_centerVertical="true"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content" />
@@ -40,13 +40,13 @@
         android:textSize="14sp"
         android:textColor="@color/problem_title"
         android:layout_toRightOf="@+id/rv_problem_num"
-        android:layout_marginLeft="22dp"
+        android:layout_marginLeft="12dp"
         android:layout_centerVertical="true"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content" />
 
     <ImageView
-        android:id="@+id/rv_problem_hint"
+        android:id="@+id/rv_problem_solution"
         android:padding="10dp"
         android:src="@mipmap/problem_hint"
         android:layout_toLeftOf="@id/rv_problem_rate"

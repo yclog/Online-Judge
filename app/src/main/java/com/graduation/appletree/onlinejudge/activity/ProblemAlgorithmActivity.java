@@ -1,6 +1,7 @@
 package com.graduation.appletree.onlinejudge.activity;
 
 import android.content.Context;
+import android.os.Bundle;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.view.View;
@@ -62,7 +63,9 @@ public class ProblemAlgorithmActivity extends BaseActivity{
         mRVProblemAdapter.setOnItemClickListener(new RVProblemAdapter.OnRecyclerViewItemClickListener() {
             @Override
             public void onItemClick(View view, int problem_id) {
-                readyGo(ProblemDetailsActivity.class);
+                Bundle bundle = new Bundle();
+                bundle.putInt("id", problem_id);
+                readyGo(ProblemDetailsActivity.class, bundle);
             }
         });
         rv_problem_algorithm.setLayoutManager(new LinearLayoutManager(getContext()));
@@ -71,10 +74,10 @@ public class ProblemAlgorithmActivity extends BaseActivity{
 
     private List<RVProblemData> getDataList(){
         List<RVProblemData> mDataList = new ArrayList<>();
-        mDataList.add(new RVProblemData(1, 0, 1, "Test1", "32%", 2));
-        mDataList.add(new RVProblemData(2, 1, 2, "Test2", "33%", 0));
-        mDataList.add(new RVProblemData(3, 2, 3, "Test3", "52%", 0));
-        mDataList.add(new RVProblemData(4, 0, 4, "Test4", "46%", 2));
+        mDataList.add(new RVProblemData(0, 0, 1, "Two Sum", "32%", 2));
+        mDataList.add(new RVProblemData(1, 1, 2, "Add Two Numbers", "33%", 0));
+        mDataList.add(new RVProblemData(2, 2, 3, "Reverse Integer", "52%", 0));
+        mDataList.add(new RVProblemData(3, 0, 4, "Palindrome Number", "46%", 2));
         return mDataList;
     }
 }

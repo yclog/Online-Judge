@@ -2,11 +2,46 @@
     <string name="app_name">Online Judge</string>
     <string name="profile_connectus_advice_hint">Please let us know what you want to improve this product</string>
     <string name="profile_connectus_contact_hint">Phone/QQ/Email</string>
-    <string name="problem_content_sample">
+
+    <string name="problem_title_sample_one">
+        Two Sum
+    </string>
+    <string name="problem_content_sample_one">
         Given an array of integers, return indices of the two numbers such that they add up to a specific target.
         You may assume that each input would have exactly one solution, and you may not use the same element twice.
     </string>
-    <string name="problem_example_sample">
+    <string name="problem_example_sample_one">
         Given nums = [2, 7, 11, 15], target = 9\nBecause nums[0] + nums[1] = 2 + 7 = 9\nreturn [0, 1]
+    </string>
+
+    <string name="problem_title_sample_two">
+        Add Two Numbers
+    </string>
+    <string name="problem_content_sample_two">
+        You are given two non-empty linked lists representing two non-negative integers. The digits are stored in reverse order and each of their nodes contain a single digit. Add the two numbers and return it as a linked list.\n
+        You may assume the two numbers do not contain any leading zero, except the number 0 itself.
+    </string>
+    <string name="problem_example_sample_two">
+        Input: (2 -> 4 -> 3) + (5 -> 6 -> 4)\nOutput: 7 -> 0 -> 8\nExplanation: 342 + 465 = 807.
+    </string>
+
+    <string name="problem_title_sample_three">
+        Reverse Integer
+    </string>
+    <string name="problem_content_sample_three">
+        Given a 32-bit signed integer, reverse digits of an integer.
+    </string>
+    <string name="problem_example_sample_three">
+        Example 1:\nInput: 123\nOutput: 321\nExample 2:\nInput: -123\nOutput: -321\nExample 3:\nInput: 120\nOutput: 21
+    </string>
+
+    <string name="problem_title_sample_four">
+        Palindrome Number
+    </string>
+    <string name="problem_content_sample_four">
+        Determine whether an integer is a palindrome. An integer is a palindrome when it reads the same backward as forward.
+    </string>
+    <string name="problem_example_sample_four">
+        Example 1:\nInput: 121\nOutput: true\nExample 2:\nInput: -121\nOutput: false\nExplanation: From left to right, it reads -121. From right to left, it becomes 121-. Therefore it is not a palindrome.\nExample 3:\nInput: 10\nOutput: false\nExplanation: Reads 01 from right to left. Therefore it is not a palindrome.
     </string>
 </resources>

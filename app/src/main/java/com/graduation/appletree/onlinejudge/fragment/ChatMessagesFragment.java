@@ -52,10 +52,10 @@ public class ChatMessagesFragment extends BaseFragment{
 
     private List<RVChatMessageData> getDataList(){
         List<RVChatMessageData> mDataList = new ArrayList<>();
-        mDataList.add(new RVChatMessageData(R.drawable.hugh, "System","17.24"));
-        mDataList.add(new RVChatMessageData(R.drawable.hugh, "System","17.24"));
-        mDataList.add(new RVChatMessageData(R.drawable.hugh, "System","17.24"));
-        mDataList.add(new RVChatMessageData(R.drawable.hugh, "System","17.24"));
+        mDataList.add(new RVChatMessageData(R.drawable.avatar_system, "System","17.24"));
+        mDataList.add(new RVChatMessageData(R.drawable.avatar_system, "System","17.24"));
+        mDataList.add(new RVChatMessageData(R.drawable.avatar_system, "System","17.24"));
+        mDataList.add(new RVChatMessageData(R.drawable.avatar_system, "System","17.24"));
         return mDataList;
     }
 }

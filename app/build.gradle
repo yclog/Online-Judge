@@ -49,4 +49,6 @@ dependencies {
     implementation 'com.zzhoujay.richtext:richtext:3.0.7'
     implementation 'com.github.blackfizz:eazegraph:1.2.2@aar'
     implementation 'com.nineoldandroids:library:2.4.0'
+    implementation 'com.github.lfkdsk:JustWeTools:v1.0'
+    implementation 'com.github.traex.rippleeffect:library:1.3'
 }
