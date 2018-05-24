@@ -31,4 +31,10 @@
     <include layout="@layout/session_title"></include>
 
     <include layout="@layout/shadowline"></include>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_profile_session"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    </android.support.v7.widget.RecyclerView>
 </LinearLayout>

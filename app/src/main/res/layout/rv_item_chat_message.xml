@@ -3,7 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:background="@color/chat_vp_background"
     android:layout_width="match_parent"
-    android:layout_height="52dp">
+    android:layout_height="72dp">
 
     <com.graduation.appletree.onlinejudge.view.CircleImageView
         android:id="@+id/chat_message_avatar"
@@ -20,7 +20,7 @@
         android:text="Hello World , To be a better man"
         android:textSize="14sp"
         android:textColor="@color/chat_vp_message"
-        android:layout_marginTop="10dp"
+        android:layout_marginTop="20dp"
         android:layout_marginLeft="16dp"
         android:layout_toRightOf="@+id/chat_message_avatar"
         android:layout_width="wrap_content"
@@ -31,7 +31,7 @@
         android:src="@mipmap/chat_message"
         android:layout_width="20dp"
         android:layout_height="20dp"
-        android:layout_marginTop="30dp"
+        android:layout_marginTop="38dp"
         android:layout_marginLeft="12dp"
         android:layout_toRightOf="@+id/chat_message_avatar" />
 
@@ -44,6 +44,6 @@
         android:layout_height="wrap_content"
         android:layout_marginLeft="4dp"
         android:layout_toRightOf="@+id/chat_message_icon"
-        android:layout_marginTop="32.6dp" />
+        android:layout_marginTop="40.6dp" />
 
 </RelativeLayout>

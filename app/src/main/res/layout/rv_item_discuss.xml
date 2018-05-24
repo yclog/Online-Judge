@@ -44,6 +44,8 @@
     <TextView
         android:id="@+id/rv_discuss_post_brief"
         android:background="@drawable/shadow_border"
+        android:paddingLeft="6dp"
+        android:paddingTop="3dp"
         android:layout_marginLeft="12dp"
         android:layout_marginRight="12dp"
         android:layout_width="match_parent"

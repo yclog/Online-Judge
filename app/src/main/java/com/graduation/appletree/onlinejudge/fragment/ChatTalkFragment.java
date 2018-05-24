@@ -1,5 +1,6 @@
 package com.graduation.appletree.onlinejudge.fragment;
 
+import android.support.v7.widget.DividerItemDecoration;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 
@@ -12,6 +13,8 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class ChatTalkFragment extends BaseFragment{
+
+    private static ChatTalkFragment mInstance;
 
     private RecyclerView rv_chat_talk;
 
@@ -34,9 +37,18 @@ public class ChatTalkFragment extends BaseFragment{
     /**
      * Instance Method
      * */
+
+    public static ChatTalkFragment getInstance(){
+        if (mInstance == null){
+            mInstance = new ChatTalkFragment();
+        }
+        return mInstance;
+    }
+
     private void InitRecoView(){
         RVChatTalkAdapter mRVChatTalkAdapter = new RVChatTalkAdapter(getContext(),getDataList());
         rv_chat_talk.setLayoutManager(new LinearLayoutManager(getContext()));
+//        rv_chat_talk.addItemDecoration(new DividerItemDecoration(getContext(),LinearLayoutManager.VERTICAL));
         rv_chat_talk.setAdapter(mRVChatTalkAdapter);
     }
 

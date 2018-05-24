@@ -3,7 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:background="@color/chat_vp_background"
     android:layout_width="match_parent"
-    android:layout_height="52dp">
+    android:layout_height="62dp">
 
     <com.graduation.appletree.onlinejudge.view.CircleImageView
         android:id="@+id/chat_contact_avatar"

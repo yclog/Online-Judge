@@ -7,7 +7,8 @@ public class RVProfilePointData {
     private String rv_profile_point_title;
     private String rv_profile_point_content;
 
-    public RVProfilePointData(String rv_profile_point_date, String rv_profile_point_add, String rv_profile_point_title, String rv_profile_point_content) {
+    public RVProfilePointData(String rv_profile_point_date, String rv_profile_point_add,
+                              String rv_profile_point_title, String rv_profile_point_content) {
         this.rv_profile_point_date = rv_profile_point_date;
         this.rv_profile_point_add = rv_profile_point_add;
         this.rv_profile_point_title = rv_profile_point_title;

@@ -1,8 +1,11 @@
 package com.graduation.appletree.onlinejudge.adapter;
 
 import android.content.Context;
+import android.content.Intent;
 import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.RecyclerView.Adapter;
+
+import com.graduation.appletree.onlinejudge.activity.ProblemDetailsActivity;
 import com.graduation.appletree.onlinejudge.adapter.RVProblemAdapter.RVHolder;
 
 import android.util.Log;
@@ -32,6 +35,16 @@ public class RVProblemAdapter extends Adapter<RVHolder>{
         this.mContext = mContext;
     }
 
+    public static interface OnRecyclerViewItemClickListener {
+        void onItemClick(View view , int problem_id);
+    }
+
+    private OnRecyclerViewItemClickListener mOnItemClickListener = null;
+
+    public void setOnItemClickListener(OnRecyclerViewItemClickListener listener) {
+        this.mOnItemClickListener = listener;
+    }
+
     @Override
     public RVHolder onCreateViewHolder(ViewGroup parent, int viewType) {
         RVHolder holder = new RVHolder(mLayoutInflater.inflate(R.layout.rv_item_problems, parent, false));
@@ -39,7 +52,7 @@ public class RVProblemAdapter extends Adapter<RVHolder>{
     }
 
     @Override
-    public void onBindViewHolder(RVHolder holder, int position) {
+    public void onBindViewHolder(final RVHolder holder, final int position) {
         switch (mDataList.get(position).getProblem_status()){
             case 0:{
                 holder.problem_attempted.setVisibility(View.INVISIBLE);
@@ -83,6 +96,12 @@ public class RVProblemAdapter extends Adapter<RVHolder>{
                 Log.d(TAG, "Problem Difficulty Status Invalid ");
             }
         }
+        holder.itemView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                mOnItemClickListener.onItemClick(view, mDataList.get(position).getProblem_id());
+            }
+        });
     }
 
     @Override

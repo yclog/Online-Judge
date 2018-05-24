@@ -6,8 +6,12 @@ import android.util.Log;
 import android.view.View;
 import android.widget.LinearLayout;
 import android.widget.RelativeLayout;
+import android.widget.Toast;
 
 import com.bigkoo.convenientbanner.ConvenientBanner;
+import com.bigkoo.convenientbanner.holder.CBViewHolderCreator;
+import com.bigkoo.convenientbanner.holder.Holder;
+import com.bigkoo.convenientbanner.listener.OnItemClickListener;
 import com.graduation.appletree.onlinejudge.R;
 import com.graduation.appletree.onlinejudge.activity.ProblemAlgorithmActivity;
 import com.graduation.appletree.onlinejudge.activity.RankActivity;
@@ -16,13 +20,16 @@ import com.graduation.appletree.onlinejudge.adapter.RVHomeSolutionAdapter;
 import com.graduation.appletree.onlinejudge.bean.RVHomeRankData;
 import com.graduation.appletree.onlinejudge.bean.RVHomeSolutionData;
 import com.graduation.appletree.onlinejudge.eventbus.EventCenter;
+import com.graduation.appletree.onlinejudge.view.LocalImageHolderView;
 
+import java.lang.reflect.Field;
 import java.util.ArrayList;
 import java.util.List;
 
-public class HomeFragment extends BaseFragment implements View.OnClickListener{
+public class HomeFragment extends BaseFragment implements View.OnClickListener,OnItemClickListener{
 
     private final String TAG = this.getClass().getName();
+    private static boolean isAdd = false;
 
     /**
      * 视图
@@ -36,6 +43,22 @@ public class HomeFragment extends BaseFragment implements View.OnClickListener{
     protected RecyclerView rv_home_rank;
     protected RecyclerView rv_home_solution;
     protected LinearLayout rank;
+
+    private ArrayList<Integer> localImages = new ArrayList<>();
+
+    @Override
+    public void onStart() {
+        super.onStart();
+        //开始翻页
+        home_ad_vp.startTurning();
+    }
+
+    @Override
+    public void onPause() {
+        super.onPause();
+        //暂停翻页
+        home_ad_vp.startTurning();
+    }
 
     @Override
     protected int getContentViewLayoutID() {
@@ -72,11 +95,31 @@ public class HomeFragment extends BaseFragment implements View.OnClickListener{
         }
     }
 
+    @Override
+    public void onItemClick(int position) {
+        Toast.makeText(getContext(),"点击了第"+position+"个",Toast.LENGTH_SHORT).show();
+    }
+
     /**
      * Instance Method
      * */
 
-    private void initAdViewPager(){}
+    private void initAdViewPager(){
+        loadAdDatas();
+        home_ad_vp.setPages(new CBViewHolderCreator() {
+            @Override
+            public Holder createHolder(View itemView) {
+                return new LocalImageHolderView(itemView);
+            }
+
+            @Override
+            public int getLayoutId() {
+                return R.layout.item_localimage;
+            }
+        }, localImages)
+        .setPageIndicator(new int[]{R.drawable.ic_page_indicator, R.drawable.ic_page_indicator_focused})
+        .setOnItemClickListener(this);
+    }
 
     private void initView(){
         home_algorithm = getRootView().findViewById(R.id.home_algorithm);
@@ -91,6 +134,7 @@ public class HomeFragment extends BaseFragment implements View.OnClickListener{
         rv_home_solution = getRootView().findViewById(R.id.rv_home_solution);
         rank = getRootView().findViewById(R.id.rank);
         rank.setOnClickListener(this);
+        home_ad_vp = getRootView().findViewById(R.id.home_ad_vp);
     }
 
     private void initRecoView(){
@@ -145,5 +189,31 @@ public class HomeFragment extends BaseFragment implements View.OnClickListener{
         test2.setHome_solution_biref("test brief");
         mDataList.add(test2);
         return mDataList;
+    }
+
+    private void loadAdDatas(){
+        if (isAdd == true)
+            return;
+        for (int i = 0; i < 4; i++) {
+            localImages.add(getResId("home_ad_" + i, R.drawable.class));
+            isAdd = true;
+        }
+    }
+
+    /**
+     * 通过文件名获取资源id 例子：getResId("icon", R.drawable.class);
+     *
+     * @param variableName
+     * @param c
+     * @return
+     */
+    public static int getResId(String variableName, Class<?> c) {
+        try {
+            Field idField = c.getDeclaredField(variableName);
+            return idField.getInt(idField);
+        } catch (Exception e) {
+            e.printStackTrace();
+            return -1;
+        }
     }
 }

@@ -59,16 +59,22 @@ public class ProblemAlgorithmActivity extends BaseActivity{
 
     private void initRecoView(){
         RVProblemAdapter mRVProblemAdapter = new RVProblemAdapter(getContext(),getDataList());
+        mRVProblemAdapter.setOnItemClickListener(new RVProblemAdapter.OnRecyclerViewItemClickListener() {
+            @Override
+            public void onItemClick(View view, int problem_id) {
+                readyGo(ProblemDetailsActivity.class);
+            }
+        });
         rv_problem_algorithm.setLayoutManager(new LinearLayoutManager(getContext()));
         rv_problem_algorithm.setAdapter(mRVProblemAdapter);
     }
 
     private List<RVProblemData> getDataList(){
         List<RVProblemData> mDataList = new ArrayList<>();
-        mDataList.add(new RVProblemData(0, 1, "Test1", "32%", 2));
-        mDataList.add(new RVProblemData(1, 2, "Test2", "33%", 0));
-        mDataList.add(new RVProblemData(2, 3, "Test3", "52%", 0));
-        mDataList.add(new RVProblemData(0, 4, "Test4", "46%", 2));
+        mDataList.add(new RVProblemData(1, 0, 1, "Test1", "32%", 2));
+        mDataList.add(new RVProblemData(2, 1, 2, "Test2", "33%", 0));
+        mDataList.add(new RVProblemData(3, 2, 3, "Test3", "52%", 0));
+        mDataList.add(new RVProblemData(4, 0, 4, "Test4", "46%", 2));
         return mDataList;
     }
 }

@@ -36,7 +36,7 @@
                 xmlns:app="http://schemas.android.com/apk/res-auto"
                 android:id="@+id/home_ad_vp"
                 android:layout_width="match_parent"
-                android:layout_height="140dp"
+                android:layout_height="156dp"
                 app:canLoop="true"
                 />
 

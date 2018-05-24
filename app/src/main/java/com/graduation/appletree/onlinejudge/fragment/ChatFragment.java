@@ -70,9 +70,9 @@ public class ChatFragment extends BaseFragment implements View.OnClickListener{
         /**
          * 为fragmentViewpagerList添加fragment
          * */
-        mFragmentList.add(new ChatTalkFragment());
-        mFragmentList.add(new ChatContactsFragment());
-        mFragmentList.add(new ChatMessagesFragment());
+        mFragmentList.add(ChatTalkFragment.getInstance());
+        mFragmentList.add(ChatContactsFragment.getInstance());
+        mFragmentList.add(ChatMessagesFragment.getInstance());
         /**
          * 添加Viewpager滑动监听事件
          * */
@@ -115,7 +115,7 @@ public class ChatFragment extends BaseFragment implements View.OnClickListener{
         /**
          * viewpager设置adapter
          * */
-        FragmentPagerAdapter adapter = new FragmentPagerAdapter(getActivity().getSupportFragmentManager(), mFragmentList);
+        FragmentPagerAdapter adapter = new FragmentPagerAdapter(getChildFragmentManager(), mFragmentList);
         chatVP.setAdapter(adapter);
     }
 
