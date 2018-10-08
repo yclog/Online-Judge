@@ -11,6 +11,12 @@ import com.graduation.appletree.onlinejudge.eventbus.EventCenter;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * Message In Chat View
+ *
+ * @author lucas
+ * @date 2018/3/21
+ */
 public class ChatMessagesFragment extends BaseFragment{
 
     private static ChatMessagesFragment mInstance;
@@ -52,10 +58,10 @@ public class ChatMessagesFragment extends BaseFragment{
 
     private List<RVChatMessageData> getDataList(){
         List<RVChatMessageData> mDataList = new ArrayList<>();
-        mDataList.add(new RVChatMessageData(R.drawable.avatar_system, "System","17.24"));
-        mDataList.add(new RVChatMessageData(R.drawable.avatar_system, "System","17.24"));
-        mDataList.add(new RVChatMessageData(R.drawable.avatar_system, "System","17.24"));
-        mDataList.add(new RVChatMessageData(R.drawable.avatar_system, "System","17.24"));
+        mDataList.add(new RVChatMessageData(R.drawable.avatar_five, "Update Username","17.24"));
+        mDataList.add(new RVChatMessageData(R.drawable.hugh, "李老师发布任务：完成前三题","17：00"));
+        mDataList.add(new RVChatMessageData(R.drawable.hugh, "李老师发布任务：分析官方文档","8：24"));
+        mDataList.add(new RVChatMessageData(R.drawable.hugh, "李老师发布任务：完成总结","17：36"));
         return mDataList;
     }
 }

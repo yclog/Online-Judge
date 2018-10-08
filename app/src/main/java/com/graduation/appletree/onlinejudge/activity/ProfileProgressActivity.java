@@ -16,6 +16,12 @@ import org.eazegraph.lib.models.ValueLineSeries;
 
 import butterknife.BindView;
 
+/**
+ * Show Solved Progress
+ *
+ * @author lucas
+ * @date 2018/3/21
+ */
 public class ProfileProgressActivity extends BaseActivity{
     @BindView(R.id.titlebar_back)
     protected ImageView titlebar_back;

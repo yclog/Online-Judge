@@ -1,6 +1,7 @@
 package com.graduation.appletree.onlinejudge.activity;
 
 import android.content.Context;
+import android.database.sqlite.SQLiteDatabase;
 import android.support.v4.app.Fragment;
 import android.support.v4.view.ViewPager;
 import android.view.View;
@@ -22,6 +23,12 @@ import butterknife.BindView;
 import butterknife.OnClick;
 import de.greenrobot.event.EventBus;
 
+/**
+ * MainActivity
+ *
+ * @author lucas
+ * @date 2018/3/21
+ */
 public class MainActivity extends BaseActivity {
 
     private List<Fragment> mFragmentList;

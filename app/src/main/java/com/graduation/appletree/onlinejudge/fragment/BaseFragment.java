@@ -14,6 +14,12 @@ import de.greenrobot.event.EventBus;
 import de.greenrobot.event.Subscribe;
 import de.greenrobot.event.ThreadMode;
 
+/**
+ * BaseFragment
+ *
+ * @author lucas
+ * @date 2018/3/21
+ */
 public abstract class BaseFragment extends Fragment{
 
     View rootView;

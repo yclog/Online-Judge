@@ -17,6 +17,12 @@ import java.util.List;
 
 import butterknife.BindView;
 
+/**
+ * Problem List
+ *
+ * @author lucas
+ * @date 2018/3/21
+ */
 public class ProblemAlgorithmActivity extends BaseActivity{
 
     @BindView(R.id.titlebar_back)

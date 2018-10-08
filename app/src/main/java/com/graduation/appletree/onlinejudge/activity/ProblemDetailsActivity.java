@@ -5,16 +5,27 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
+import android.widget.Button;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.graduation.appletree.onlinejudge.R;
 import com.graduation.appletree.onlinejudge.eventbus.EventCenter;
 import com.zzhoujay.richtext.RichText;
 import com.zzhoujay.richtext.RichType;
 
-import butterknife.BindView;
+import java.util.ArrayList;
 
+import butterknife.BindView;
+import butterknife.OnClick;
+
+/**
+ * Problem Details
+ *
+ * @author lucas
+ * @date 2018/3/21
+ */
 public class ProblemDetailsActivity extends BaseActivity{
 
     private final String TAG = this.getClass().getName();
@@ -31,6 +42,16 @@ public class ProblemDetailsActivity extends BaseActivity{
     protected RelativeLayout problem_detail_solution;
     @BindView(R.id.problem_detail_solution_mk)
     protected TextView problem_detail_solution_mk;
+
+    @BindView(R.id.problem_detail_code)
+    protected TextView problem_detail_code;
+    @BindView(R.id.problem_code_test)
+    protected Button problem_code_test;
+    @BindView(R.id.problem_code_submit)
+    protected Button problem_code_submit;
+
+    int tag ;
+    String keyContent = "cout<<nums1+nums2;";
 
     @Override
     protected int getContentViewLayoutID() {
@@ -58,10 +79,30 @@ public class ProblemDetailsActivity extends BaseActivity{
         return null;
     }
 
+    @OnClick({R.id.problem_code_test,R.id.problem_code_submit})
+    public void RunCode(){
+        String code = problem_detail_code.getText().toString();
+        if (code.isEmpty()){
+            Toast.makeText(getApplicationContext(),"Error , Code is Empty",Toast.LENGTH_SHORT).show();
+            return;
+        }
+        String head_one = "#include <iostream>";
+        String head_two = "using namespace std";
+        if (!code.contains(head_one)){
+            Toast.makeText(getApplicationContext(),"Missing #include <iostream>",Toast.LENGTH_SHORT).show();
+        }
+        if (!code.contains(head_two)){
+            Toast.makeText(getApplicationContext(),"using namespace std",Toast.LENGTH_SHORT).show();
+        }
+        if (isValid(code)){
+            Toast.makeText(getApplicationContext(),"Missing { or }",Toast.LENGTH_SHORT).show();
+        }
+        Toast.makeText(getApplicationContext(),"Success",Toast.LENGTH_SHORT).show();
+    }
+
     /**
      * Instance Method
      * */
-
 
     private void initMarkdown(){
         if (getIntent().getBooleanExtra("isSolution",true)){
@@ -93,6 +134,7 @@ public class ProblemDetailsActivity extends BaseActivity{
 
     private void loadContent(){
         Bundle bundle = getIntent().getExtras();
+        tag = bundle.getInt("id");
         switch (bundle.getInt("id")){
             case -1:{
                 problem_detail_title.setText(R.string.problem_title_sample_zero);
@@ -126,4 +168,51 @@ public class ProblemDetailsActivity extends BaseActivity{
             }
         }
     }
+
+    ArrayList<Character> arrayList=new ArrayList<>();
+
+    public boolean isValid(String s) {
+        if (isRight(s.charAt(0)))
+            return false;
+        if (s.length()%2==1)
+            return false;
+        for (int i = 0; i < s.length(); i++) {
+            arrayList.add(s.charAt(i));
+            if (isRight(s.charAt(i))){
+                if (isMatch(arrayList.get(arrayList.size()-2),arrayList.get(arrayList.size()-1)))
+                    popTwo();
+            }
+        }
+        if (arrayList.size()==0)
+            return true;
+        else
+            return false;
+    }
+
+    public void push(char symbol){
+        arrayList.add(symbol);
+    }
+
+    public void popTwo(){
+        arrayList.remove(arrayList.size()-1);
+        arrayList.remove(arrayList.size()-1);
+    }
+
+    public boolean isMatch(char Left,char Right){
+        if (Left=='{' && Right=='}')
+            return true;
+        if (Left=='(' && Right==')')
+            return true;
+        if (Left=='[' && Right==']')
+            return true;
+        return false;
+    }
+
+    public boolean isRight(char symbol){
+        if (symbol=='}'||symbol==']'||symbol==')')
+            return true;
+        return false;
+    }
+
+
 }

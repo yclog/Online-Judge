@@ -8,7 +8,7 @@ import android.os.Environment;
 import android.os.Looper;
 import android.widget.Toast;
 
-import com.graduation.appletree.onlinejudge.application.DemoApplication;
+import com.graduation.appletree.onlinejudge.application.StandardApplication;
 
 import java.io.File;
 import java.io.FileOutputStream;
@@ -17,6 +17,12 @@ import java.io.StringWriter;
 import java.util.HashMap;
 import java.util.Map;
 
+/**
+ * Handler Custom Crash
+ *
+ * @author lucas
+ * @date 2018/3/21
+ */
 public class CustomCrashHandler implements Thread.UncaughtExceptionHandler{
 
     private Context mContext;
@@ -41,7 +47,7 @@ public class CustomCrashHandler implements Thread.UncaughtExceptionHandler{
             e.printStackTrace();
         }
 
-        DemoApplication.getInstance().exitApplication();
+        StandardApplication.getInstance().exitApplication();
     }
 
     public void setCustomCrashHandler(Context context){

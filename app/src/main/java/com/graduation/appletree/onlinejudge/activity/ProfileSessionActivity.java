@@ -17,6 +17,12 @@ import java.util.List;
 
 import butterknife.BindView;
 
+/**
+ * Personal Session
+ *
+ * @author lucas
+ * @date 2018/3/21
+ */
 public class ProfileSessionActivity extends BaseActivity{
     @BindView(R.id.titlebar_back)
     protected ImageView titlebar_back;

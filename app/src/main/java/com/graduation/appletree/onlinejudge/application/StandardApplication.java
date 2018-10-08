@@ -11,19 +11,22 @@ import com.graduation.appletree.onlinejudge.activity.BaseAppManager;
 import com.graduation.appletree.onlinejudge.application.crash.CustomCrashHandler;
 
 /**
- * Created by luke on 2018/3/21.
+ * StandardApplication
+ *
+ * @author lucas
+ * @date 2018/3/21
  */
 
-public class DemoApplication extends BaseApplication implements Application.ActivityLifecycleCallbacks{
+public class StandardApplication extends BaseApplication implements Application.ActivityLifecycleCallbacks{
 
-    private static DemoApplication demoApplicationInstance;
+    private static StandardApplication demoApplicationInstance;
     private Handler mHandler;
 
-    public static DemoApplication getInstance(){
+    public static StandardApplication getInstance(){
         if (demoApplicationInstance == null){
-            synchronized (DemoApplication.class){
+            synchronized (StandardApplication.class){
                 if (demoApplicationInstance == null){
-                    demoApplicationInstance = new DemoApplication();
+                    demoApplicationInstance = new StandardApplication();
                 }
             }
         }

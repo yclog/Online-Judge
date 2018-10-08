@@ -9,6 +9,12 @@ import com.graduation.appletree.onlinejudge.R;
 import com.graduation.appletree.onlinejudge.eventbus.EventCenter;
 import com.graduation.appletree.onlinejudge.eventbus.EventCode;
 
+/**
+ * Chat Talk Menu
+ *
+ * @author lucas
+ * @date 2018/3/21
+ */
 public class ChatTalkMenuFragment extends BaseFragment{
 
     private final String TAG = this.getClass().getName();

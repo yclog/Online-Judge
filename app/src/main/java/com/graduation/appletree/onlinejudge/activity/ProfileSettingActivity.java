@@ -9,6 +9,12 @@ import com.graduation.appletree.onlinejudge.eventbus.EventCenter;
 
 import butterknife.BindView;
 
+/**
+ * Personal Setting
+ *
+ * @author lucas
+ * @date 2018/3/21
+ */
 public class ProfileSettingActivity extends BaseActivity{
     @BindView(R.id.titlebar_back)
     protected ImageView titlebar_back;

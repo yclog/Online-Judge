@@ -8,6 +8,12 @@ import android.content.Context;
 
 import java.util.ArrayList;
 
+/**
+ * A class to manager activities and fragments
+ *
+ * @author lucas
+ * @date 2018/3/21
+ */
 public class BaseAppManager {
 
     private ArrayList<Activity> mActivityStack = new ArrayList<Activity>();

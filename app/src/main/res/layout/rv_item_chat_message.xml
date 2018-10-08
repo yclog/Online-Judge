@@ -19,7 +19,7 @@
         android:id="@+id/chat_message_name"
         android:text="Hello World , To be a better man"
         android:textSize="14sp"
-        android:textColor="@color/chat_vp_message"
+        android:textColor="@color/titlebarTextLight"
         android:layout_marginTop="20dp"
         android:layout_marginLeft="16dp"
         android:layout_toRightOf="@+id/chat_message_avatar"

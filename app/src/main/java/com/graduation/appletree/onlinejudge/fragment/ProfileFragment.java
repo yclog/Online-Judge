@@ -15,9 +15,15 @@ import com.graduation.appletree.onlinejudge.activity.ProfilePointActivity;
 import com.graduation.appletree.onlinejudge.activity.ProfileProgressActivity;
 import com.graduation.appletree.onlinejudge.activity.ProfileSessionActivity;
 import com.graduation.appletree.onlinejudge.activity.ProfileSettingActivity;
-import com.graduation.appletree.onlinejudge.activity.ProfileSubmisisonActivity;
+import com.graduation.appletree.onlinejudge.activity.ProfileSubmissionActivity;
 import com.graduation.appletree.onlinejudge.eventbus.EventCenter;
 
+/**
+ * Personal Fragment
+ *
+ * @author lucas
+ * @date 2018/3/21
+ */
 public class ProfileFragment extends BaseFragment implements View.OnClickListener{
 
     private final String TAG = this.getClass().getName();
@@ -91,7 +97,7 @@ public class ProfileFragment extends BaseFragment implements View.OnClickListene
                 break;
             }
             case R.id.profile_submission:{
-                readyGo(ProfileSubmisisonActivity.class);
+                readyGo(ProfileSubmissionActivity.class);
                 break;
             }
             default:{

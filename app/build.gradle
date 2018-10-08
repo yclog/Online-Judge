@@ -4,7 +4,7 @@ android {
     compileSdkVersion 26
     defaultConfig {
         applicationId "com.graduation.appletree.onlinejudge"
-        minSdkVersion 16
+        minSdkVersion 17
         targetSdkVersion 26
         versionCode 1
         versionName "1.0"
@@ -28,9 +28,9 @@ dependencies {
 
     // Gson 2.8.2
     implementation 'com.google.code.gson:gson:2.8.2'
-    // Retrofit2:Convert-gson
+    // Retrofit2:Convert-Gson
     implementation 'com.squareup.retrofit2:converter-gson:2.0.0-beta4'
-    // Retrofit2:Adapter-rxjava
+    // Retrofit2:Adapter-RxJava
     implementation 'com.squareup.retrofit2:adapter-rxjava:2.0.0-beta4'
     // RxJava 2.1.9
     implementation 'io.reactivex.rxjava2:rxjava:2.1.9'

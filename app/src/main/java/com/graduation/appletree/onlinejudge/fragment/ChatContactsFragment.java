@@ -11,6 +11,12 @@ import com.graduation.appletree.onlinejudge.eventbus.EventCenter;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * Contacts In Chat View
+ *
+ * @author lucas
+ * @date 2018/3/21
+ */
 public class ChatContactsFragment extends BaseFragment{
 
     private static ChatContactsFragment mInstance;
@@ -53,10 +59,10 @@ public class ChatContactsFragment extends BaseFragment{
         List<RVChatContactData> mDataList = new ArrayList<>();
         mDataList.add(new RVChatContactData(R.drawable.avatar_two,"Deerlog"));
         mDataList.add(new RVChatContactData(R.drawable.avatar_six,"SpritCan"));
-        mDataList.add(new RVChatContactData(R.drawable.avatar_nine,"金朝麟"));
-        mDataList.add(new RVChatContactData(R.drawable.avatar_five,"付健"));
-        mDataList.add(new RVChatContactData(R.drawable.avatar_eight,"沙瑞金"));
-        mDataList.add(new RVChatContactData(R.drawable.avatar_four,"张平"));
+        mDataList.add(new RVChatContactData(R.drawable.avatar_nine,"小白"));
+        mDataList.add(new RVChatContactData(R.drawable.avatar_five,"阿芙佳朵"));
+        mDataList.add(new RVChatContactData(R.drawable.avatar_eight,"耶加冷萃"));
+        mDataList.add(new RVChatContactData(R.drawable.avatar_four,"二哈"));
         return mDataList;
     }
 }

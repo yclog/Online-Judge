@@ -18,6 +18,12 @@ import java.util.List;
 import butterknife.OnClick;
 import de.greenrobot.event.EventBus;
 
+/**
+ * Chat Fragment
+ *
+ * @author lucas
+ * @date 2018/3/21
+ */
 public class ChatFragment extends BaseFragment implements View.OnClickListener{
 
     private List<Fragment> mFragmentList;

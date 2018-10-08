@@ -11,6 +11,12 @@ import com.graduation.appletree.onlinejudge.eventbus.EventCenter;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * Discuss Fragment
+ *
+ * @author lucas
+ * @date 2018/3/21
+ */
 public class DiscussFragment extends BaseFragment{
 
     protected RecyclerView rv_discuss;
@@ -48,7 +54,7 @@ public class DiscussFragment extends BaseFragment{
         List<RVDiscussData> mDataList = new ArrayList<>();
         RVDiscussData test = new RVDiscussData();
         test.setHome_solution_avatar(R.drawable.avatar_nine);
-        test.setHome_solution_nickname("金朝麟");
+        test.setHome_solution_nickname("小白");
         test.setHome_solution_title("Solution to problem one");
         test.setHome_solution_biref("The brute force approach is simple. Loop through each element xx and find if there is another value that equals to target - xtarget−x.");
         mDataList.add(test);
@@ -60,7 +66,7 @@ public class DiscussFragment extends BaseFragment{
         mDataList.add(test1);
         RVDiscussData test2 = new RVDiscussData();
         test2.setHome_solution_avatar(R.drawable.avatar_five);
-        test2.setHome_solution_nickname("付健");
+        test2.setHome_solution_nickname("耶加冷萃");
         test2.setHome_solution_title("如何高效分析时间复杂度");
         test2.setHome_solution_biref("关键概念\n" +
                 "　　要分析算法的复杂度,通常需要分析循环的运行.\n" +

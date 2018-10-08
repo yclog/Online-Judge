@@ -16,7 +16,13 @@ import java.util.List;
 
 import butterknife.BindView;
 
-public class ProfileSubmisisonActivity extends BaseActivity{
+/**
+ * Personal Submission
+ *
+ * @author lucas
+ * @date 2018/3/21
+ */
+public class ProfileSubmissionActivity extends BaseActivity{
 
     @BindView(R.id.titlebar_back)
     protected ImageView titlebar_back;
@@ -52,7 +58,7 @@ public class ProfileSubmisisonActivity extends BaseActivity{
         titlebar_back.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                ProfileSubmisisonActivity.this.finish();
+                ProfileSubmissionActivity.this.finish();
             }
         });
     }

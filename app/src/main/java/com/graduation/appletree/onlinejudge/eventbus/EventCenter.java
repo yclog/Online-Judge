@@ -1,9 +1,11 @@
 package com.graduation.appletree.onlinejudge.eventbus;
 
 /**
- * Created by wangchengyuan on 2018/3/21.
+ * EventBus消息总线管道传输对象
+ *
+ * @author lucas
+ * @date 2018/3/21
  */
-
 public class EventCenter<T> {
 
     private T data;

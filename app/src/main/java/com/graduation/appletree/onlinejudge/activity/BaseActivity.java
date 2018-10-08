@@ -17,8 +17,10 @@ import de.greenrobot.event.Subscribe;
 import de.greenrobot.event.ThreadMode;
 
 /**
- * Created by luke on 2018/3/21.
- * Description: build a super base fragmentActivity class
+ * build a super base fragmentActivity class
+ *
+ * @author lucas
+ * @date 2018/3/21
  */
 
 public abstract class BaseActivity extends FragmentActivity{
@@ -31,7 +33,7 @@ public abstract class BaseActivity extends FragmentActivity{
         setContentViewLayoutId();
         // Init Listener and Event
         initViewAndEvent();
-        //add activity to BaseAppManager.mActivityStack
+        // add activity to BaseAppManager.mActivityStack
         BaseAppManager.getInstance().addActivty(this);
         EventBus.getDefault().register(this);
     }
@@ -74,11 +76,11 @@ public abstract class BaseActivity extends FragmentActivity{
         ButterKnife.bind(this);
     }
 
-    /**
-     * Instance Method
-     * */
+    /***** Instance Method *****/
 
-    // Check NetWork Status
+    /**
+     * Check NetWork Status
+     * */
     private void checkNetworkStatus(){
         ConnectivityManager connectivityManager = (ConnectivityManager)getApplicationContext()
                 .getSystemService(Context.CONNECTIVITY_SERVICE);
@@ -90,7 +92,9 @@ public abstract class BaseActivity extends FragmentActivity{
         }
     }
 
-    //setContentView
+    /**
+     * setContentView
+     * */
     private void setContentViewLayoutId(){
         if (getContentViewLayoutID() != 0){
             setContentView(getContentViewLayoutID());
@@ -99,43 +103,72 @@ public abstract class BaseActivity extends FragmentActivity{
         }
     }
 
-    // Jump to Another Class without params
+    /**
+     * Jump to Another Class without params
+     *
+     * @param targetClass
+     * */
     protected void readyGo(Class<?> targetClass){
         Intent intent = new Intent(this, targetClass);
         startActivity(intent);
     }
 
-    // Jump to Another Class with params
+    /**
+     * Jump to Another Class with params
+     *
+     * @param targetClass
+     * @param bundle
+     * */
     protected void readyGo(Class<?> targetClass,Bundle bundle){
         Intent intent = new Intent(this, targetClass);
         intent.putExtras(bundle);
         startActivity(intent);
     }
 
-    // Jump to Another Class with requestCode
+    /**
+     * Jump to Another Class with requestCode
+     *
+     * @param targetClass
+     * @param requestCode
+     * */
     protected void readyGoForResult(Class<?> targetClass,int requestCode){
         Intent intent = new Intent(this, targetClass);
         startActivityForResult(intent, requestCode);
     }
 
 
-    /**
-     * Abstract Method
-     * */
+    /***** Abstract Method *****/
 
-    // Get ContentViewLayoutId
+    /**
+     * Get ContentViewLayoutId
+     *
+     * @return LayoutID
+     * */
     protected abstract int getContentViewLayoutID();
 
-    // Init Listener and Event
+    /**
+     * Init Listener and Event
+     * */
     protected abstract void initViewAndEvent();
 
-    //Handle EventBus's event
+    /**
+     * Handle EventBus's event
+     *
+     * @param eventCenter
+     * */
     protected abstract void onEventComing(EventCenter eventCenter);
 
-    //return Context
+    /**
+     * Get Context
+     *
+     * @return Context
+     */
     protected abstract Context getContext();
+
     /**
      * EventBus
+     *
+     * @param eventCenter
      * */
     @Subscribe(threadMode = ThreadMode.MainThread)
     public void onEventCenter(EventCenter eventCenter){

@@ -14,11 +14,11 @@ import rx.android.schedulers.AndroidSchedulers;
 import rx.schedulers.Schedulers;
 
 /**
- * Created by luke on 2018/3/21.
  * Network Utils
- * RxJava + Retrofit + OkHttp
+ *
+ * @author lucas
+ * @date 2018/3/21
  */
-
 public class NetRequestUtil {
 
     private static NetRequestUtil NetRequestUtilInstance;
@@ -61,7 +61,7 @@ public class NetRequestUtil {
      *  @param reqUrl must start without "/" and end with "/"
      *  @param subscriber
      * */
-    public void postTestMethod(String reqUrl,String json,Subscriber<Response<ResponseBody>> subscriber){
+    public void login(String reqUrl,String json,Subscriber<Response<ResponseBody>> subscriber){
         initRetrofit(baseUrl + reqUrl);
         RequestBody body = RequestBody.create(JSON, json);
         testService.postRxRepo(body)

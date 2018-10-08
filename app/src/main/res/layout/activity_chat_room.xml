@@ -29,13 +29,27 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"/>
     </android.support.v7.widget.Toolbar>
-    
-    <android.support.v7.widget.RecyclerView
-        android:id="@+id/rv_chat_room_message"
+
+    <LinearLayout
         android:layout_weight="1"
+        android:orientation="horizontal"
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
-    </android.support.v7.widget.RecyclerView>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rv_chat_room_accept"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        </android.support.v7.widget.RecyclerView>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rv_chat_room_send"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        </android.support.v7.widget.RecyclerView>
+    </LinearLayout>
 
     <include layout="@layout/shadowline"></include>
     
@@ -64,6 +78,7 @@
             android:layout_height="28dp" />
 
         <EditText
+            android:id="@+id/chat_room_input"
             android:hint="Type a Message"
             android:textSize="14sp"
             android:layout_weight="1"

@@ -6,10 +6,11 @@
 
     <com.graduation.appletree.onlinejudge.view.CircleImageView
         android:id="@+id/rv_chat_send_avatar"
-        android:src="@drawable/avatar_system"
+        android:src="@drawable/avatar_one"
         android:layout_alignParentRight="true"
         android:layout_marginRight="12dp"
         android:layout_marginTop="12dp"
+        android:layout_marginBottom="12dp"
         android:layout_width="42dp"
         android:layout_height="42dp"
         app:civ_border_width="1dp"

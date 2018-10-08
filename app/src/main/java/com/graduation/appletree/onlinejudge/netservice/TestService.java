@@ -8,9 +8,11 @@ import retrofit2.http.GET;
 import retrofit2.http.POST;
 import rx.Observable;
 
-/***
- * Created by luke on 2018/3/21.
- * 与RetroFit绑定接口
+/**
+ * Retrofit Service
+ *
+ * @author lucas
+ * @date 2018/3/21
  */
 public interface TestService {
 
@@ -20,4 +22,6 @@ public interface TestService {
     @POST("/post")
     Observable<Response<ResponseBody>> postRxRepo(@Body RequestBody body);
 
+    @POST("/post")
+    Observable<Response<ResponseBody>> login(@Body RequestBody body);
 }

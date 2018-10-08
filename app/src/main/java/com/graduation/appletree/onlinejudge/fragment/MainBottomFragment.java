@@ -12,6 +12,12 @@ import com.graduation.appletree.onlinejudge.eventbus.EventCode;
 import butterknife.BindInt;
 import butterknife.BindView;
 
+/**
+ * MainBottom Menu
+ *
+ * @author lucas
+ * @date 2018/3/21
+ */
 public class MainBottomFragment extends BaseFragment{
 
     private final String TAG = this.getClass().getName();

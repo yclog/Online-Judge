@@ -16,6 +16,12 @@ import java.util.List;
 
 import butterknife.BindView;
 
+/**
+ * Receiver Message
+ *
+ * @author lucas
+ * @date 2018/3/21
+ */
 public class ProfileMessageActivity extends BaseActivity{
     @BindView(R.id.titlebar_back)
     protected ImageView titlebar_back;

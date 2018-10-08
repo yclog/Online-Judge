@@ -184,7 +184,7 @@
 
                 <TextView
                     android:id="@+id/problem_detail_result"
-                    android:hint="Result"
+                    android:text="Result"
                     android:paddingLeft="8dp"
                     android:paddingRight="8dp"
                     android:paddingTop="4dp"
